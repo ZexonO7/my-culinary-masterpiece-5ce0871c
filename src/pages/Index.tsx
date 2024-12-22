@@ -44,7 +44,7 @@ const Index = () => {
             Culinary Masterpieces
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto">
-            Discover award-winning recipes from our cooking contests
+            Where Passion Meets Flavor in Our Gourmet Challenge
           </p>
         </div>
       </section>
