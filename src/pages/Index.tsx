@@ -43,8 +43,11 @@ const Index = () => {
           <h1 className="font-playfair text-5xl md:text-7xl font-bold mb-6 gold-gradient">
             Culinary Masterpieces
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto mb-4">
             Where Passion Meets Flavor in Our Gourmet Challenge
+          </p>
+          <p className="font-playfair text-2xl md:text-3xl italic text-primary animate-fade-up">
+            by Advithya Bhardwaj
           </p>
         </div>
       </section>
