@@ -55,7 +55,7 @@ const Index = () => {
       {/* Recipe Grid */}
       <section className="container py-16">
         <h2 className="font-playfair text-3xl md:text-4xl font-bold mb-12 text-center">
-          Gourmet <span className="gold-gradient">Recipes</span>
+          Finger Licking <span className="gold-gradient">Recipes</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {recipes.map((recipe) => (
