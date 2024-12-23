@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Recipe } from '../types/Recipe';
 import { Clock, ChefHat } from 'lucide-react';
 
@@ -7,12 +7,20 @@ interface RecipeCardProps {
 }
 
 const RecipeCard: React.FC<RecipeCardProps> = ({ recipe }) => {
+  const [imageError, setImageError] = useState(false);
+
+  const handleImageError = () => {
+    console.error(`Failed to load image for recipe: ${recipe.title}`);
+    setImageError(true);
+  };
+
   return (
     <div className="recipe-card rounded-lg p-4 transition-all duration-300 hover:transform hover:scale-105">
       <img
-        src={recipe.image}
+        src={imageError ? '/placeholder.svg' : recipe.image}
         alt={recipe.title}
         className="w-full h-48 object-cover rounded-lg mb-4"
+        onError={handleImageError}
       />
       <h3 className="font-playfair text-xl font-bold mb-2 gold-gradient">
         {recipe.title}
