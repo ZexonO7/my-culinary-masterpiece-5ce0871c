@@ -16,12 +16,14 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ recipe }) => {
 
   return (
     <div className="recipe-card rounded-lg p-4 transition-all duration-300 hover:transform hover:scale-105">
-      <img
-        src={imageError ? '/placeholder.svg' : recipe.image}
-        alt={recipe.title}
-        className="w-full h-48 object-cover rounded-lg mb-4"
-        onError={handleImageError}
-      />
+      <div className="relative h-48 w-full overflow-hidden rounded-lg mb-4">
+        <img
+          src={imageError ? '/placeholder.svg' : recipe.image}
+          alt={recipe.title}
+          className="absolute inset-0 w-full h-full object-cover"
+          onError={handleImageError}
+        />
+      </div>
       <h3 className="font-playfair text-xl font-bold mb-2 gold-gradient">
         {recipe.title}
       </h3>
