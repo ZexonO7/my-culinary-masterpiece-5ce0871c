@@ -7,23 +7,23 @@ const Index = () => {
   const recipes: Recipe[] = [
     {
       id: 1,
-      title: "Purple Velvet Cake",
-      description: "A stunning twist on the classic red velvet, perfect for special occasions.",
+      title: "Paneer Butter Masala",
+      description: "A rich and creamy Indian curry with soft paneer cubes in a tomato-based gravy.",
       image: "https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-      ingredients: ["Cake flour", "Cocoa powder", "Purple food coloring", "Buttermilk"],
-      instructions: ["Preheat oven", "Mix dry ingredients", "Add wet ingredients", "Bake"],
-      cookingTime: "1h 30m",
-      difficulty: "Medium"
+      ingredients: ["Paneer", "Tomatoes", "Cream", "Butter", "Spices"],
+      instructions: ["Prepare the gravy", "Cook paneer", "Add spices", "Simmer"],
+      cookingTime: "45m",
+      difficulty: "Hard"
     },
     {
       id: 2,
-      title: "Golden Mushroom Risotto",
-      description: "Creamy risotto with wild mushrooms and a touch of saffron.",
+      title: "Golden Mushroom Pasta",
+      description: "Creamy pasta with sautéed mushrooms and a touch of saffron.",
       image: "https://images.unsplash.com/photo-1476124369491-e7addf5db371?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-      ingredients: ["Arborio rice", "Mushrooms", "Saffron", "White wine"],
-      instructions: ["Sauté mushrooms", "Toast rice", "Add wine", "Gradually add stock"],
-      cookingTime: "45m",
-      difficulty: "Hard"
+      ingredients: ["Pasta", "Mushrooms", "Saffron", "Cream"],
+      instructions: ["Cook pasta", "Sauté mushrooms", "Make sauce", "Combine"],
+      cookingTime: "30m",
+      difficulty: "Easy"
     },
   ];
 
