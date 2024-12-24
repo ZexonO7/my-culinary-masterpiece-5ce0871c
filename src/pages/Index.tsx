@@ -12,7 +12,7 @@ const Index = () => {
       image: "/lovable-uploads/6a5c80a4-808b-4681-9f22-7daadd81a361.png",
       ingredients: ["Paneer", "Tomatoes", "Cream", "Butter", "Spices"],
       instructions: ["Prepare the gravy", "Cook paneer", "Add spices", "Simmer"],
-      cookingTime: "45m",
+      cookingTime: "1h30m",
       difficulty: "Hard"
     },
     {
@@ -22,7 +22,7 @@ const Index = () => {
       image: "/lovable-uploads/3d41ae60-1aec-466b-980d-16e5f2e55e45.png",
       ingredients: ["Pasta", "Mushrooms", "Saffron", "Cream"],
       instructions: ["Cook pasta", "Sauté mushrooms", "Make sauce", "Combine"],
-      cookingTime: "30m",
+      cookingTime: "45m",
       difficulty: "Easy"
     },
   ];
