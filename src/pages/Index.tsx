@@ -87,7 +87,7 @@ const Index = () => {
         {/* Indian Recipes */}
         <div className="mb-12">
           <h3 className="font-playfair text-2xl font-bold mb-6 text-primary-DEFAULT">
-            <span className="underline decoration-2">Indian Cuisine</span>
+            <span className="underline decoration-2 decoration-gold">Indian Cuisine</span>
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {indianRecipes.map((recipe) => (
@@ -99,7 +99,7 @@ const Index = () => {
         {/* Italian Recipes */}
         <div>
           <h3 className="font-playfair text-2xl font-bold mb-6 text-primary-DEFAULT">
-            <span className="underline decoration-2">Italian Cuisine</span>
+            <span className="underline decoration-2 decoration-gold">Italian Cuisine</span>
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {italianRecipes.map((recipe) => (
