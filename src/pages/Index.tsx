@@ -3,7 +3,6 @@ import RecipeCard from '../components/RecipeCard';
 import { Recipe } from '../types/Recipe';
 
 const Index = () => {
-  // Sample recipe data
   const recipes: Recipe[] = [
     {
       id: 1,
@@ -87,10 +86,8 @@ const Index = () => {
 
         {/* Indian Recipes */}
         <div className="mb-12">
-          <h3 className="font-playfair text-2xl font-bold mb-6 text-primary-DEFAULT animate-fade-up">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-DEFAULT to-purple-400">
-              Indian Cuisine
-            </span>
+          <h3 className="font-playfair text-2xl font-bold mb-6 text-primary-DEFAULT">
+            <span className="underline decoration-2">Indian Cuisine</span>
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {indianRecipes.map((recipe) => (
@@ -101,10 +98,8 @@ const Index = () => {
 
         {/* Italian Recipes */}
         <div>
-          <h3 className="font-playfair text-2xl font-bold mb-6 text-primary-DEFAULT animate-fade-up">
-            <span className="gold-gradient">
-              Italian Cuisine
-            </span>
+          <h3 className="font-playfair text-2xl font-bold mb-6 text-primary-DEFAULT">
+            <span className="underline decoration-2">Italian Cuisine</span>
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {italianRecipes.map((recipe) => (
