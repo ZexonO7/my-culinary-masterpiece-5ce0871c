@@ -7,4 +7,5 @@ export interface Recipe {
   instructions: string[];
   cookingTime: string;
   difficulty: "Easy" | "Medium" | "Hard";
+  cuisine: "Indian" | "Italian";
 }
