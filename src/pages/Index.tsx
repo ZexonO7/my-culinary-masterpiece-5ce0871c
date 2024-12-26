@@ -56,7 +56,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[80vh] flex items-center justify-center">
+      <section className="relative h-[80vh] flex items-center justify-center animate-fade-in">
         <div 
           className="absolute inset-0 bg-cover bg-center z-0"
           style={{
@@ -66,44 +66,48 @@ const Index = () => {
           }}
         />
         <div className="container relative z-10 text-center">
-          <h1 className="font-playfair text-5xl md:text-7xl font-bold mb-6 gold-gradient">
+          <h1 className="font-playfair text-5xl md:text-7xl font-bold mb-6 gold-gradient animate-fade-up">
             Culinary Masterpieces
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto mb-4">
+          <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto mb-4 animate-fade-up" style={{ animationDelay: '0.2s' }}>
             Where Passion Meets Flavor in Our Gourmet Challenge
           </p>
-          <p className="font-playfair text-2xl md:text-3xl italic text-white animate-fade-up">
+          <p className="font-playfair text-2xl md:text-3xl italic text-white animate-fade-up" style={{ animationDelay: '0.4s' }}>
             By Advithya Bhardwaj
           </p>
         </div>
       </section>
 
       {/* Recipe Grid */}
-      <section className="container py-16">
+      <section className="container py-16 animate-fade-in" style={{ animationDelay: '0.6s' }}>
         <h2 className="font-playfair text-3xl md:text-4xl font-bold mb-12 text-center">
           Finger Licking <span className="gold-gradient">Recipes</span>
         </h2>
 
         {/* Indian Recipes */}
-        <div className="mb-12">
+        <div className="mb-12 animate-fade-up" style={{ animationDelay: '0.8s' }}>
           <h3 className="font-playfair text-2xl font-bold mb-6 text-primary-DEFAULT">
             Indian Cuisine
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {indianRecipes.map((recipe) => (
-              <RecipeCard key={recipe.id} recipe={recipe} />
+            {indianRecipes.map((recipe, index) => (
+              <div key={recipe.id} className="animate-fade-up" style={{ animationDelay: `${0.2 * (index + 1)}s` }}>
+                <RecipeCard recipe={recipe} />
+              </div>
             ))}
           </div>
         </div>
 
         {/* Italian Recipes */}
-        <div>
+        <div className="animate-fade-up" style={{ animationDelay: '1s' }}>
           <h3 className="font-playfair text-2xl font-bold mb-6 text-primary-DEFAULT">
             Italian Cuisine
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {italianRecipes.map((recipe) => (
-              <RecipeCard key={recipe.id} recipe={recipe} />
+            {italianRecipes.map((recipe, index) => (
+              <div key={recipe.id} className="animate-fade-up" style={{ animationDelay: `${0.2 * (index + 1)}s` }}>
+                <RecipeCard recipe={recipe} />
+              </div>
             ))}
           </div>
         </div>
