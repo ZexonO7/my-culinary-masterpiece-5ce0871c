@@ -21,8 +21,11 @@ const SplashScreen = () => {
     >
       <div className="text-center animate-fade-up">
         <h1 className="font-playfair text-6xl font-bold mb-4 gold-gradient">
-          Purple Gold Bistro
+          Culinary Masterpieces
         </h1>
+        <h2 className="font-playfair text-3xl text-primary mb-6">
+          By Advithya Bhardwaj
+        </h2>
         <div className="flex items-center justify-center space-x-2">
           <div className="w-3 h-3 bg-primary rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>
           <div className="w-3 h-3 bg-primary rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
