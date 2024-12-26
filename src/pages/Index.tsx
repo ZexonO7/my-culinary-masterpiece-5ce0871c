@@ -41,7 +41,7 @@ const Index = () => {
       id: 4,
       title: "Paneer Tikka",
       description: "Grilled cottage cheese cubes marinated in spiced yogurt with aromatic spices.",
-      image: "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80",
+      image: "/lovable-uploads/464a71d5-7ff4-47cf-a059-752661623ae2.png",
       ingredients: ["Paneer", "Yogurt", "Bell Peppers", "Indian Spices"],
       instructions: ["Marinate paneer", "Thread on skewers", "Grill", "Garnish"],
       cookingTime: "1h",
@@ -87,7 +87,7 @@ const Index = () => {
         {/* Indian Recipes */}
         <div className="mb-12">
           <h3 className="font-playfair text-2xl font-bold mb-6 text-primary-DEFAULT">
-            <span className="underline decoration-2 decoration-gold">Indian Cuisine</span>
+            Indian Cuisine
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {indianRecipes.map((recipe) => (
@@ -99,7 +99,7 @@ const Index = () => {
         {/* Italian Recipes */}
         <div>
           <h3 className="font-playfair text-2xl font-bold mb-6 text-primary-DEFAULT">
-            <span className="underline decoration-2 decoration-gold">Italian Cuisine</span>
+            Italian Cuisine
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {italianRecipes.map((recipe) => (
