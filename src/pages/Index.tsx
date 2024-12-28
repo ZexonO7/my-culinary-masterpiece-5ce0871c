@@ -47,6 +47,17 @@ const Index = () => {
       cookingTime: "1h",
       difficulty: "Medium",
       cuisine: "Indian"
+    },
+    {
+      id: 5,
+      title: "Mushroom Red Pasta",
+      description: "Classic Italian pasta with mushrooms in a rich tomato sauce.",
+      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9",
+      ingredients: ["Pasta", "Mushrooms", "Tomato Sauce", "Garlic", "Italian Herbs"],
+      instructions: ["Cook pasta", "Sauté mushrooms", "Prepare sauce", "Combine and serve"],
+      cookingTime: "30m",
+      difficulty: "Easy",
+      cuisine: "Italian"
     }
   ];
 
