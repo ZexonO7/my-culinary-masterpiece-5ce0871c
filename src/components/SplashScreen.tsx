@@ -2,10 +2,14 @@ import React, { useEffect, useState } from 'react';
 
 const SplashScreen = () => {
   const [isVisible, setIsVisible] = useState(true);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsVisible(false);
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setIsVisible(false);
+      }, 1000); // Wait for transition to complete before removing from DOM
     }, 2000); // Show splash screen for 2 seconds
 
     return () => clearTimeout(timer);
@@ -15,8 +19,8 @@ const SplashScreen = () => {
 
   return (
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-center bg-dark transition-opacity duration-1000 ${
-        isVisible ? 'opacity-100' : 'opacity-0'
+      className={`fixed inset-0 z-50 flex items-center justify-center bg-dark transition-all duration-1000 ${
+        isTransitioning ? 'opacity-0 translate-y-[-20px]' : 'opacity-100 translate-y-0'
       }`}
     >
       <div className="text-center animate-fade-up">
