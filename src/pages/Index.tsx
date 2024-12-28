@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import RecipeCard from '../components/RecipeCard';
 import { Recipe } from '../types/Recipe';
 
@@ -52,6 +52,34 @@ const Index = () => {
 
   const indianRecipes = recipes.filter(recipe => recipe.cuisine === "Indian");
   const italianRecipes = recipes.filter(recipe => recipe.cuisine === "Italian");
+  
+  const titleRef = useRef<HTMLHeadingElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-scale-in', 'opacity-100');
+            entry.target.classList.remove('opacity-0', 'scale-0');
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    if (titleRef.current) {
+      observer.observe(titleRef.current);
+    }
+
+    return () => {
+      if (titleRef.current) {
+        observer.unobserve(titleRef.current);
+      }
+    };
+  }, []);
 
   return (
     <div className="min-h-screen">
@@ -80,7 +108,10 @@ const Index = () => {
 
       {/* Recipe Grid */}
       <section className="container py-16 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-        <h2 className="font-playfair text-3xl md:text-4xl font-bold mb-12 text-center">
+        <h2 
+          ref={titleRef}
+          className="font-playfair text-3xl md:text-4xl font-bold mb-12 text-center transform transition-all duration-700 opacity-0 scale-0"
+        >
           Finger Licking <span className="gold-gradient">Recipes</span>
         </h2>
 
