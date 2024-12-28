@@ -52,7 +52,7 @@ const Index = () => {
       id: 5,
       title: "Mushroom Red Pasta",
       description: "Classic Italian pasta with mushrooms in a rich tomato sauce.",
-      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9",
+      image: "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80",
       ingredients: ["Pasta", "Mushrooms", "Tomato Sauce", "Garlic", "Italian Herbs"],
       instructions: ["Cook pasta", "Sauté mushrooms", "Prepare sauce", "Combine and serve"],
       cookingTime: "30m",
