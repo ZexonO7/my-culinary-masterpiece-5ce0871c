@@ -7,10 +7,29 @@ const Index = () => {
     {
       id: 1,
       title: "Paneer Butter Masala",
-      description: "A rich and creamy Indian curry with soft paneer cubes in a tomato-based gravy.",
+      description: "A luxurious North Indian curry featuring tender paneer cubes swimming in a rich, creamy tomato-based gravy. This restaurant-style dish combines the perfect balance of aromatic spices with a silky smooth sauce, creating a vegetarian delicacy that's both comforting and indulgent.",
       image: "/lovable-uploads/6a5c80a4-808b-4681-9f22-7daadd81a361.png",
-      ingredients: ["Paneer", "Tomatoes", "Cream", "Butter", "Spices"],
-      instructions: ["Prepare the gravy", "Cook paneer", "Add spices", "Simmer"],
+      ingredients: [
+        "Fresh paneer cubes",
+        "Ripe tomatoes",
+        "Heavy cream",
+        "Kashmiri red chilies",
+        "Cashew nuts",
+        "Fresh butter",
+        "Kasoori methi (dried fenugreek leaves)",
+        "Ginger-garlic paste",
+        "Garam masala",
+        "Honey",
+        "Fresh coriander leaves"
+      ],
+      instructions: [
+        "Blend tomatoes, cashews, and Kashmiri chilies into a smooth paste",
+        "Sauté ginger-garlic paste in butter until fragrant",
+        "Add tomato paste and cook until oil separates",
+        "Mix in spices and simmer with cream",
+        "Add paneer cubes and cook gently",
+        "Finish with kasoori methi and fresh coriander"
+      ],
       cookingTime: "1h30m",
       difficulty: "Hard",
       cuisine: "Indian"
@@ -18,10 +37,30 @@ const Index = () => {
     {
       id: 2,
       title: "Golden Mushroom Pasta",
-      description: "Creamy pasta with sautéed mushrooms and a touch of saffron.",
+      description: "An exquisite Italian pasta dish where al dente noodles meet a luxurious sauce infused with premium saffron and wild mushrooms. The combination creates a golden-hued masterpiece that's both visually stunning and deeply satisfying.",
       image: "/lovable-uploads/3d41ae60-1aec-466b-980d-16e5f2e55e45.png",
-      ingredients: ["Pasta", "Mushrooms", "Saffron", "Cream"],
-      instructions: ["Cook pasta", "Sauté mushrooms", "Make sauce", "Combine"],
+      ingredients: [
+        "Artisanal pasta",
+        "Mixed wild mushrooms",
+        "Premium saffron threads",
+        "Fresh heavy cream",
+        "Aged Parmigiano-Reggiano",
+        "White wine",
+        "Shallots",
+        "Fresh thyme",
+        "Garlic cloves",
+        "Extra virgin olive oil",
+        "Fresh parsley"
+      ],
+      instructions: [
+        "Bloom saffron in warm water",
+        "Cook pasta until perfectly al dente",
+        "Sauté mushrooms with shallots and garlic",
+        "Deglaze with white wine",
+        "Add cream and saffron infusion",
+        "Toss pasta in the golden sauce",
+        "Finish with Parmigiano-Reggiano and parsley"
+      ],
       cookingTime: "45m",
       difficulty: "Easy",
       cuisine: "Italian"
@@ -29,10 +68,30 @@ const Index = () => {
     {
       id: 3,
       title: "Hyderabadi Biryani",
-      description: "Aromatic rice dish layered with tender meat, herbs, and authentic Indian spices.",
+      description: "A majestic Indian delicacy featuring fragrant basmati rice layered with tender, marinated meat and a symphony of whole spices. This royal dish combines the art of perfect rice cooking with the science of spice blending, resulting in an aromatic masterpiece that's garnished with saffron milk, fried onions, and fresh mint.",
       image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80",
-      ingredients: ["Basmati Rice", "Meat", "Saffron", "Onions", "Indian Spices"],
-      instructions: ["Prepare rice", "Cook meat", "Layer ingredients", "Dum cooking"],
+      ingredients: [
+        "Aged basmati rice",
+        "Premium quality meat (lamb or chicken)",
+        "Iranian saffron",
+        "Fresh mint and coriander",
+        "Ghee",
+        "Caramelized onions",
+        "Whole spices (cardamom, cinnamon, bay leaves)",
+        "Yogurt",
+        "Green chilies",
+        "Rose water",
+        "Kewra water (screwpine essence)"
+      ],
+      instructions: [
+        "Marinate meat with yogurt and spices",
+        "Par-boil rice with whole spices",
+        "Layer marinated meat and rice",
+        "Add saffron milk and aromatics",
+        "Seal with dough and slow cook",
+        "Rest for 10 minutes before serving",
+        "Garnish with fried onions and mint"
+      ],
       cookingTime: "2h",
       difficulty: "Hard",
       cuisine: "Indian"
@@ -40,10 +99,30 @@ const Index = () => {
     {
       id: 4,
       title: "Paneer Tikka",
-      description: "Grilled cottage cheese cubes marinated in spiced yogurt with aromatic spices.",
+      description: "A sophisticated Indian appetizer featuring marinated cottage cheese cubes and colorful bell peppers, char-grilled to perfection. Each piece is infused with a aromatic blend of yogurt and spices, creating a smoky, tangy flavor profile that's both elegant and satisfying.",
       image: "/lovable-uploads/464a71d5-7ff4-47cf-a059-752661623ae2.png",
-      ingredients: ["Paneer", "Yogurt", "Bell Peppers", "Indian Spices"],
-      instructions: ["Marinate paneer", "Thread on skewers", "Grill", "Garnish"],
+      ingredients: [
+        "Fresh paneer blocks",
+        "Thick Greek yogurt",
+        "Tricolor bell peppers",
+        "Red onions",
+        "Kashmiri red chili powder",
+        "Ginger-garlic paste",
+        "Chaat masala",
+        "Mustard oil",
+        "Gram flour",
+        "Fresh lime juice",
+        "Mixed tandoori spices"
+      ],
+      instructions: [
+        "Whisk yogurt with spices and gram flour",
+        "Cut paneer and vegetables into uniform pieces",
+        "Marinate for at least 4 hours",
+        "Thread onto skewers alternating ingredients",
+        "Grill until charred and smoky",
+        "Baste with butter while grilling",
+        "Serve with mint chutney and onion rings"
+      ],
       cookingTime: "1h",
       difficulty: "Medium",
       cuisine: "Indian"
