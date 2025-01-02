@@ -51,12 +51,30 @@ const Index = () => {
     {
       id: 5,
       title: "Mushroom Red Pasta",
-      description: "Classic Italian pasta with mushrooms in a rich tomato sauce.",
+      description: "A luxurious Italian pasta dish featuring sautéed mushrooms in a rich, aromatic tomato sauce infused with fresh herbs and garlic, topped with freshly grated Parmesan cheese.",
       image: "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80",
-      ingredients: ["Pasta", "Mushrooms", "Tomato Sauce", "Garlic", "Italian Herbs"],
-      instructions: ["Cook pasta", "Sauté mushrooms", "Prepare sauce", "Combine and serve"],
-      cookingTime: "30m",
-      difficulty: "Easy",
+      ingredients: [
+        "Fettuccine pasta",
+        "Mixed mushrooms (portobello, cremini, shiitake)",
+        "San Marzano tomatoes",
+        "Fresh garlic cloves",
+        "Fresh basil and oregano",
+        "Extra virgin olive oil",
+        "Red wine",
+        "Parmesan cheese",
+        "Salt and black pepper"
+      ],
+      instructions: [
+        "Boil pasta in salted water until al dente",
+        "Sauté mixed mushrooms with garlic in olive oil",
+        "Add red wine and reduce",
+        "Blend San Marzano tomatoes for the sauce",
+        "Simmer sauce with fresh herbs",
+        "Combine pasta with sauce and mushrooms",
+        "Serve with freshly grated Parmesan and basil"
+      ],
+      cookingTime: "45m",
+      difficulty: "Medium",
       cuisine: "Italian"
     }
   ];
