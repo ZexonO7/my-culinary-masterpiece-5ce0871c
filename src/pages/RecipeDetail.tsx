@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Recipe } from '../types/Recipe';
-import { ChefHat, Clock, ArrowLeft } from 'lucide-react';
+import { ChefHat, Clock, ArrowLeft, Utensils } from 'lucide-react';
 
 const RecipeDetail = () => {
   const { id } = useParams();
@@ -87,65 +87,97 @@ const RecipeDetail = () => {
   const recipe = recipes.find(r => r.id === Number(id));
 
   if (!recipe) {
-    return <div>Recipe not found</div>;
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center space-y-4">
+          <h2 className="text-2xl font-playfair text-primary-DEFAULT">Recipe not found</h2>
+          <Link 
+            to="/" 
+            className="inline-flex items-center text-gold hover:text-primary-DEFAULT transition-colors"
+          >
+            <ArrowLeft className="mr-2" />
+            Back to Recipes
+          </Link>
+        </div>
+      </div>
+    );
   }
 
   return (
-    <div className="min-h-screen animate-fade-in">
-      <div className="container py-8">
+    <div className="min-h-screen animate-fade-in bg-primary-dark">
+      <div className="container py-12 px-4 md:px-8">
         <Link 
           to="/" 
-          className="inline-flex items-center text-primary-DEFAULT hover:text-gold transition-colors mb-8"
+          className="inline-flex items-center text-primary-DEFAULT hover:text-gold transition-colors mb-12"
         >
           <ArrowLeft className="mr-2" />
           Back to Recipes
         </Link>
         
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="animate-fade-up" style={{ animationDelay: '0.2s' }}>
-            <img 
-              src={recipe.image} 
-              alt={recipe.title} 
-              className="w-full h-[400px] object-cover rounded-lg shadow-lg"
-            />
+        <div className="grid md:grid-cols-2 gap-12">
+          <div className="fade-in" style={{ animationDelay: '0.2s' }}>
+            <div className="relative overflow-hidden rounded-2xl shadow-xl hover-scale">
+              <img 
+                src={recipe.image} 
+                alt={recipe.title} 
+                className="w-full h-[500px] object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"/>
+            </div>
           </div>
           
-          <div className="space-y-6">
-            <h1 className="font-playfair text-4xl font-bold gold-gradient animate-fade-up" style={{ animationDelay: '0.3s' }}>
-              {recipe.title}
-            </h1>
-            
-            <p className="text-gray-300 text-lg animate-fade-up" style={{ animationDelay: '0.4s' }}>
-              {recipe.description}
-            </p>
-            
-            <div className="flex gap-4 animate-fade-up" style={{ animationDelay: '0.5s' }}>
-              <div className="flex items-center gap-2 text-primary-DEFAULT">
-                <Clock size={20} />
-                <span>{recipe.cookingTime}</span>
-              </div>
-              <div className="flex items-center gap-2 text-primary-DEFAULT">
-                <ChefHat size={20} />
-                <span>{recipe.difficulty}</span>
+          <div className="space-y-8">
+            <div className="fade-in" style={{ animationDelay: '0.3s' }}>
+              <h1 className="font-playfair text-4xl md:text-5xl font-bold gold-gradient mb-4">
+                {recipe.title}
+              </h1>
+              
+              <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                {recipe.description}
+              </p>
+              
+              <div className="flex gap-6 mb-8">
+                <div className="flex items-center gap-2 text-primary-DEFAULT">
+                  <Clock size={24} />
+                  <span className="text-lg">{recipe.cookingTime}</span>
+                </div>
+                <div className="flex items-center gap-2 text-primary-DEFAULT">
+                  <ChefHat size={24} />
+                  <span className="text-lg">{recipe.difficulty}</span>
+                </div>
+                <div className="flex items-center gap-2 text-primary-DEFAULT">
+                  <Utensils size={24} />
+                  <span className="text-lg">{recipe.cuisine}</span>
+                </div>
               </div>
             </div>
             
-            <div className="space-y-4 animate-fade-up" style={{ animationDelay: '0.6s' }}>
-              <h2 className="font-playfair text-2xl font-bold text-primary-DEFAULT">Ingredients</h2>
-              <ul className="list-disc list-inside space-y-2">
-                {recipe.ingredients.map((ingredient, index) => (
-                  <li key={index} className="text-gray-300">{ingredient}</li>
-                ))}
-              </ul>
+            <div className="space-y-6 fade-in" style={{ animationDelay: '0.4s' }}>
+              <div className="bg-primary-dark/50 p-6 rounded-xl border border-primary-DEFAULT/20">
+                <h2 className="font-playfair text-2xl font-bold text-primary-DEFAULT mb-4">Ingredients</h2>
+                <ul className="space-y-3">
+                  {recipe.ingredients.map((ingredient, index) => (
+                    <li key={index} className="text-gray-300 flex items-center gap-2">
+                      <span className="w-2 h-2 rounded-full bg-gold"/>
+                      {ingredient}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
             
-            <div className="space-y-4 animate-fade-up" style={{ animationDelay: '0.7s' }}>
-              <h2 className="font-playfair text-2xl font-bold text-primary-DEFAULT">Instructions</h2>
-              <ol className="list-decimal list-inside space-y-2">
-                {recipe.instructions.map((instruction, index) => (
-                  <li key={index} className="text-gray-300">{instruction}</li>
-                ))}
-              </ol>
+            <div className="space-y-6 fade-in" style={{ animationDelay: '0.5s' }}>
+              <div className="bg-primary-dark/50 p-6 rounded-xl border border-primary-DEFAULT/20">
+                <h2 className="font-playfair text-2xl font-bold text-primary-DEFAULT mb-4">Instructions</h2>
+                <ol className="space-y-4">
+                  {recipe.instructions.map((instruction, index) => (
+                    <li key={index} className="text-gray-300 flex gap-4">
+                      <span className="font-playfair text-gold font-bold">{index + 1}.</span>
+                      {instruction}
+                    </li>
+                  ))}
+                </ol>
+              </div>
             </div>
           </div>
         </div>
