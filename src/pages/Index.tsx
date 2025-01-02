@@ -7,7 +7,7 @@ const Index = () => {
     {
       id: 1,
       title: "Paneer Butter Masala",
-      description: "A luxurious North Indian curry featuring tender paneer cubes swimming in a rich, creamy tomato-based gravy. This restaurant-style dish combines the perfect balance of aromatic spices with a silky smooth sauce, creating a vegetarian delicacy that's both comforting and indulgent.",
+      description: "A rich North Indian curry with tender paneer cubes in a creamy tomato-based gravy, perfectly spiced for an authentic restaurant-style experience.",
       image: "/lovable-uploads/6a5c80a4-808b-4681-9f22-7daadd81a361.png",
       ingredients: [
         "Fresh paneer cubes",
@@ -37,7 +37,7 @@ const Index = () => {
     {
       id: 2,
       title: "Golden Mushroom Pasta",
-      description: "An exquisite Italian pasta dish where al dente noodles meet a luxurious sauce infused with premium saffron and wild mushrooms. The combination creates a golden-hued masterpiece that's both visually stunning and deeply satisfying.",
+      description: "An elegant Italian pasta featuring al dente noodles in a saffron-infused sauce with wild mushrooms, creating a visually stunning golden dish.",
       image: "/lovable-uploads/3d41ae60-1aec-466b-980d-16e5f2e55e45.png",
       ingredients: [
         "Artisanal pasta",
@@ -68,7 +68,7 @@ const Index = () => {
     {
       id: 3,
       title: "Hyderabadi Biryani",
-      description: "A majestic Indian delicacy featuring fragrant basmati rice layered with tender, marinated meat and a symphony of whole spices. This royal dish combines the art of perfect rice cooking with the science of spice blending, resulting in an aromatic masterpiece that's garnished with saffron milk, fried onions, and fresh mint.",
+      description: "A royal Indian delicacy of fragrant basmati rice layered with tender meat and aromatic spices, garnished with saffron milk and mint.",
       image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80",
       ingredients: [
         "Aged basmati rice",
@@ -99,7 +99,7 @@ const Index = () => {
     {
       id: 4,
       title: "Paneer Tikka",
-      description: "A sophisticated Indian appetizer featuring marinated cottage cheese cubes and colorful bell peppers, char-grilled to perfection. Each piece is infused with a aromatic blend of yogurt and spices, creating a smoky, tangy flavor profile that's both elegant and satisfying.",
+      description: "A classic Indian appetizer of marinated cottage cheese and bell peppers, char-grilled with aromatic spices for a smoky, tangy flavor.",
       image: "/lovable-uploads/464a71d5-7ff4-47cf-a059-752661623ae2.png",
       ingredients: [
         "Fresh paneer blocks",
@@ -130,7 +130,7 @@ const Index = () => {
     {
       id: 5,
       title: "Mushroom Red Pasta",
-      description: "A luxurious Italian pasta dish featuring sautéed mushrooms in a rich, aromatic tomato sauce infused with fresh herbs and garlic, topped with freshly grated Parmesan cheese.",
+      description: "A delightful Italian pasta with sautéed mushrooms in a rich tomato sauce, enhanced with fresh herbs and Parmesan cheese.",
       image: "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80",
       ingredients: [
         "Fettuccine pasta",
