@@ -9,8 +9,8 @@ const SplashScreen = () => {
       setIsTransitioning(true);
       setTimeout(() => {
         setIsVisible(false);
-      }, 1000); // Wait for transition to complete before removing from DOM
-    }, 2000); // Show splash screen for 2 seconds
+      }, 800); // Reduced from 1000ms for a snappier transition
+    }, 1500); // Reduced from 2000ms to show splash screen for less time
 
     return () => clearTimeout(timer);
   }, []);
@@ -19,7 +19,7 @@ const SplashScreen = () => {
 
   return (
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-center bg-dark transition-all duration-1000 ${
+      className={`fixed inset-0 z-50 flex items-center justify-center bg-dark transition-all duration-800 ${
         isTransitioning ? 'opacity-0 translate-y-[-20px]' : 'opacity-100 translate-y-0'
       }`}
     >
@@ -32,8 +32,8 @@ const SplashScreen = () => {
         </h2>
         <div className="flex items-center justify-center space-x-2">
           <div className="w-3 h-3 bg-primary rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>
+          <div className="w-3 h-3 bg-primary rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
           <div className="w-3 h-3 bg-primary rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
-          <div className="w-3 h-3 bg-primary rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
         </div>
       </div>
     </div>

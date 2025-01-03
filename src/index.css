@@ -14,7 +14,7 @@
   background: rgba(26, 31, 44, 0.8);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(155, 135, 245, 0.2);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .recipe-card:hover {
@@ -29,13 +29,13 @@
 }
 
 .fade-in {
-  animation: fadeIn 0.5s ease-in;
+  animation: fadeIn 0.3s ease-in;
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
@@ -44,7 +44,7 @@
 }
 
 .hover-scale {
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
 }
 
 .hover-scale:hover {

@@ -192,7 +192,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[80vh] flex items-center justify-center animate-fade-in">
+      <section className="relative h-[80vh] flex items-center justify-center animate-[fadeIn_0.5s_ease-in]">
         <div 
           className="absolute inset-0 bg-cover bg-center z-0"
           style={{
@@ -215,16 +215,16 @@ const Index = () => {
       </section>
 
       {/* Recipe Grid */}
-      <section className="container py-16 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+      <section className="container py-16 animate-[fadeIn_0.6s_ease-in]">
         <h2 
           ref={titleRef}
-          className="font-playfair text-3xl md:text-4xl font-bold mb-12 text-center transform transition-all duration-700 opacity-0 scale-0"
+          className="font-playfair text-3xl md:text-4xl font-bold mb-12 text-center transform transition-all duration-500 opacity-0 scale-0"
         >
           Finger Licking <span className="gold-gradient">Recipes</span>
         </h2>
 
         {/* Indian Recipes */}
-        <div className="mb-12 animate-fade-up" style={{ animationDelay: '0.8s' }}>
+        <div className="mb-12 animate-[fadeIn_0.4s_ease-in]">
           <h3 className="font-playfair text-2xl font-bold mb-6 text-primary-DEFAULT">
             Indian Cuisine
           </h3>
@@ -238,7 +238,7 @@ const Index = () => {
         </div>
 
         {/* Italian Recipes */}
-        <div className="animate-fade-up" style={{ animationDelay: '1s' }}>
+        <div className="animate-[fadeIn_0.4s_ease-in]">
           <h3 className="font-playfair text-2xl font-bold mb-6 text-primary-DEFAULT">
             Italian Cuisine
           </h3>
