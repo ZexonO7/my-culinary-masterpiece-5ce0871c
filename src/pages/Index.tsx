@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import RecipeCard from '../components/RecipeCard';
 import { Recipe } from '../types/Recipe';
 
@@ -208,9 +209,16 @@ const Index = () => {
           <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto mb-4 animate-fade-up" style={{ animationDelay: '0.2s' }}>
             Where Passion Meets Flavor in Our Gourmet Challenge
           </p>
-          <p className="font-playfair text-2xl md:text-3xl italic text-white animate-fade-up" style={{ animationDelay: '0.4s' }}>
+          <p className="font-playfair text-2xl md:text-3xl italic text-white animate-fade-up mb-8" style={{ animationDelay: '0.4s' }}>
             By Advithya Bhardwaj
           </p>
+          <Link 
+            to="/about"
+            className="inline-block bg-primary-DEFAULT hover:bg-primary-dark text-white px-6 py-3 rounded-full transition-colors animate-fade-up"
+            style={{ animationDelay: '0.6s' }}
+          >
+            About Me
+          </Link>
         </div>
       </section>
 
