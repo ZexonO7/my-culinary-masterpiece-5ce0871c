@@ -218,10 +218,49 @@ const Index = () => {
       <section className="container py-16 animate-[fadeIn_0.6s_ease-in]">
         <h2 
           ref={titleRef}
-          className="font-playfair text-3xl md:text-4xl font-bold mb-12 text-center transform transition-all duration-500 opacity-0 scale-0"
+          className="font-playfair text-3xl md:text-4xl font-bold mb-12 text-center transition-all duration-1000"
+          style={{
+            opacity: 0,
+            transform: 'translateY(20px)',
+            animation: 'slideUp 0.8s ease-out forwards',
+            textShadow: '0 2px 4px rgba(0,0,0,0.1)'
+          }}
         >
-          Finger Licking <span className="gold-gradient">Recipes</span>
+          Finger Licking <span className="gold-gradient relative inline-block">
+            Recipes
+            <span 
+              className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#FFD700] to-[#FFC000]"
+              style={{
+                transform: 'scaleX(0)',
+                animation: 'expandWidth 0.6s ease-out 0.8s forwards'
+              }}
+            />
+          </span>
         </h2>
+
+        {/* Add these keyframes to your existing styles */}
+        <style>
+          {`
+            @keyframes slideUp {
+              from {
+                opacity: 0;
+                transform: translateY(20px);
+              }
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+            @keyframes expandWidth {
+              from {
+                transform: scaleX(0);
+              }
+              to {
+                transform: scaleX(1);
+              }
+            }
+          `}
+        </style>
 
         {/* Indian Recipes */}
         <div className="mb-12 animate-[fadeIn_0.4s_ease-in]">
