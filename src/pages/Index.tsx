@@ -222,35 +222,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Me Preview Section */}
-      <section className="py-16 bg-primary-dark">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
-            <div className="w-48 h-48 rounded-full overflow-hidden shadow-lg flex-shrink-0">
-              <img
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
-                alt="Advithya Bhardwaj"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="flex-1 text-center md:text-left">
-              <h2 className="font-playfair text-3xl md:text-4xl font-bold mb-4 gold-gradient">
-                About Me
-              </h2>
-              <p className="text-lg text-gray-300 mb-6">
-                I am 16 and I love to cook and create content. I want to explore the gates of all types of cuisine and share it with the whole world.
-              </p>
-              <Link
-                to="/about"
-                className="inline-flex items-center text-primary-DEFAULT hover:text-white transition-colors"
-              >
-                More about me →
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Recipe Grid */}
       <section className="container py-16 animate-[fadeIn_0.6s_ease-in]">
         <h2 
