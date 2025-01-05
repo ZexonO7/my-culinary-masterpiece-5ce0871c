@@ -212,13 +212,6 @@ const Index = () => {
           <p className="font-playfair text-2xl md:text-3xl italic text-white animate-fade-up mb-8" style={{ animationDelay: '0.4s' }}>
             By Advithya Bhardwaj
           </p>
-          <Link 
-            to="/about"
-            className="inline-block bg-primary-DEFAULT hover:bg-primary-dark text-white px-6 py-3 rounded-full transition-colors animate-fade-up"
-            style={{ animationDelay: '0.6s' }}
-          >
-            About Me
-          </Link>
         </div>
       </section>
 
