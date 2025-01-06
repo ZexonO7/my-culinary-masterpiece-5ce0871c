@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import RecipeCard from '../components/RecipeCard';
 import { Recipe } from '../types/Recipe';
 import { Instagram } from 'lucide-react';
-import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
   const recipes: Recipe[] = [
@@ -255,15 +254,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* Decorative Separator */}
-      <div className="container max-w-4xl mx-auto px-4 py-8">
-        <div className="flex items-center gap-4">
-          <Separator className="flex-grow bg-primary-DEFAULT/20" />
-          <span className="text-primary-DEFAULT/60 font-playfair italic">Recipes</span>
-          <Separator className="flex-grow bg-primary-DEFAULT/20" />
-        </div>
-      </div>
 
       {/* Recipe Grid */}
       <section className="container py-8 animate-[fadeIn_0.6s_ease-in]">
