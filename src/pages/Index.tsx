@@ -218,14 +218,14 @@ const Index = () => {
       </section>
 
       {/* About Me Section */}
-      <section className="py-16 bg-gradient-to-b from-dark via-primary-dark to-dark">
+      <section className="py-8 bg-gradient-to-b from-dark via-primary-dark to-dark">
         <div className="max-w-4xl mx-auto">
           <div className="bg-primary-dark/80 backdrop-blur-lg rounded-lg p-8 shadow-xl border border-primary-DEFAULT/20 animate-fade-up">
             <div className="flex flex-col md:flex-row gap-8 items-center">
               {/* Profile Image */}
               <div className="w-48 h-48 rounded-full overflow-hidden shadow-lg ring-4 ring-primary-DEFAULT/30">
                 <img
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+                  src="/lovable-uploads/13f67694-e059-4b0b-88f2-910746049939.png"
                   alt="Advithya Bhardwaj"
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                 />
@@ -266,7 +266,7 @@ const Index = () => {
       </div>
 
       {/* Recipe Grid */}
-      <section className="container py-16 animate-[fadeIn_0.6s_ease-in]">
+      <section className="container py-8 animate-[fadeIn_0.6s_ease-in]">
         <h2 
           ref={titleRef}
           className="font-playfair text-3xl md:text-4xl font-bold mb-12 text-center transition-all duration-1000"
