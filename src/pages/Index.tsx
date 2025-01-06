@@ -237,13 +237,10 @@ const Index = () => {
                 </h1>
                 <div className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed space-y-4">
                   <p>
-                    I am 16 and I love to cook and create content. I want to explore the gates of all types of cuisine and share it with the whole world.
+                    I am Advithya Bhardwaj, 16 and I love to cook and create content. I want to explore the gates of all types of cuisine and share it with the whole world.
                   </p>
                   <p>
                     My culinary journey began in my family's kitchen, where I discovered my passion for cooking at a young age. I'm particularly fascinated by the fusion of traditional Indian flavors with modern cooking techniques, and I love experimenting with Italian cuisine.
-                  </p>
-                  <p>
-                    When I'm not in the kitchen, I'm either filming cooking tutorials, photographing food, or researching new recipes to try. My goal is to inspire other young people to explore the joy of cooking and discover the amazing world of global cuisines.
                   </p>
                 </div>
                 
