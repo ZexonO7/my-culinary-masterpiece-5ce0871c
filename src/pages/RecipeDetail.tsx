@@ -36,7 +36,7 @@ const RecipeDetail = () => {
       cookingTime: "1h30m",
       difficulty: "Hard",
       cuisine: "Indian",
-      category: "vegetarian"
+      category: ["vegetarian"]
     },
     {
       id: 2,
@@ -68,7 +68,7 @@ const RecipeDetail = () => {
       cookingTime: "45m",
       difficulty: "Easy",
       cuisine: "Italian",
-      category: "vegetarian"
+      category: ["vegetarian"]
     },
     {
       id: 3,
@@ -100,7 +100,7 @@ const RecipeDetail = () => {
       cookingTime: "2h",
       difficulty: "Hard",
       cuisine: "Indian",
-      category: "all"
+      category: ["vegetarian", "non-veg"]
     },
     {
       id: 4,
@@ -132,7 +132,7 @@ const RecipeDetail = () => {
       cookingTime: "1h",
       difficulty: "Medium",
       cuisine: "Indian",
-      category: "vegetarian"
+      category: ["vegetarian"]
     },
     {
       id: 5,
@@ -162,7 +162,7 @@ const RecipeDetail = () => {
       cookingTime: "45m",
       difficulty: "Medium",
       cuisine: "Italian",
-      category: "vegetarian"
+      category: ["vegetarian"]
     }
   ];
 
