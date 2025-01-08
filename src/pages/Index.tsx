@@ -101,7 +101,8 @@ const Index = () => {
       ],
       cookingTime: "2h",
       difficulty: "Hard",
-      cuisine: "Indian"
+      cuisine: "Indian",
+      category: "all"
     },
     {
       id: 4,
@@ -132,7 +133,8 @@ const Index = () => {
       ],
       cookingTime: "1h",
       difficulty: "Medium",
-      cuisine: "Indian"
+      cuisine: "Indian",
+      category: "vegetarian"
     },
     {
       id: 5,
@@ -161,7 +163,8 @@ const Index = () => {
       ],
       cookingTime: "45m",
       difficulty: "Medium",
-      cuisine: "Italian"
+      cuisine: "Italian",
+      category: "vegetarian"
     }
   ];
 
