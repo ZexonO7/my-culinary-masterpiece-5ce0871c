@@ -11,7 +11,7 @@ interface RecipeGridProps {
 const RecipeGrid: React.FC<RecipeGridProps> = ({ recipes, currentFilter }) => {
   const filteredRecipes = recipes.filter(recipe => {
     if (currentFilter === 'all') return true;
-    return recipe.category === currentFilter;
+    return recipe.category.includes(currentFilter);
   });
 
   const groupedRecipes = filteredRecipes.reduce((acc, recipe) => {

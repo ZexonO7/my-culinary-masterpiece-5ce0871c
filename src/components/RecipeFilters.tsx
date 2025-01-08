@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-export type FilterType = 'all' | 'vegan' | 'vegetarian' | 'desserts';
+export type FilterType = 'all' | 'vegan' | 'vegetarian' | 'desserts' | 'non-veg';
 
 interface RecipeFiltersProps {
   currentFilter: FilterType;
@@ -12,7 +12,7 @@ const RecipeFilters: React.FC<RecipeFiltersProps> = ({ currentFilter, onFilterCh
   return (
     <div className="flex justify-center mb-8">
       <Tabs value={currentFilter} onValueChange={(value) => onFilterChange(value as FilterType)} className="w-full max-w-md">
-        <TabsList className="grid w-full grid-cols-4">
+        <TabsList className="grid w-full grid-cols-5">
           <TabsTrigger value="all" className="data-[state=active]:bg-primary data-[state=active]:text-white">
             All
           </TabsTrigger>
@@ -21,6 +21,9 @@ const RecipeFilters: React.FC<RecipeFiltersProps> = ({ currentFilter, onFilterCh
           </TabsTrigger>
           <TabsTrigger value="vegetarian" className="data-[state=active]:bg-primary data-[state=active]:text-white">
             Vegetarian
+          </TabsTrigger>
+          <TabsTrigger value="non-veg" className="data-[state=active]:bg-primary data-[state=active]:text-white">
+            Non-Veg
           </TabsTrigger>
           <TabsTrigger value="desserts" className="data-[state=active]:bg-primary data-[state=active]:text-white">
             Desserts
