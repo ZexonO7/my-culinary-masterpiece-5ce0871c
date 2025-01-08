@@ -173,7 +173,7 @@ const Index = () => {
       <HeroSection />
       <AboutSection />
       <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-playfair font-bold text-center mb-8">
+        <h1 className="text-6xl font-playfair font-bold text-center mb-8">
           <span className="text-white">Finger Licking </span>
           <span className="gold-gradient underline">Recipes</span>
         </h1>
