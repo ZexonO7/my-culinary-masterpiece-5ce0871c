@@ -69,7 +69,8 @@ const Index = () => {
       ],
       cookingTime: "45m",
       difficulty: "Easy",
-      cuisine: "Italian"
+      cuisine: "Italian",
+      category: "vegetarian"
     },
     {
       id: 3,
@@ -167,6 +168,11 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <HeroSection />
+      <div className="container mx-auto px-4 py-8">
+        <h1 className="text-4xl font-playfair font-bold text-center mb-8 gold-gradient">
+          Finger Licking Recipes
+        </h1>
+      </div>
       <AboutSection />
       <RecipeFilters currentFilter={currentFilter} onFilterChange={setCurrentFilter} />
       <RecipeGrid recipes={recipes} currentFilter={currentFilter} />
