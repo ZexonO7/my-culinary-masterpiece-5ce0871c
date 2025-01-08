@@ -1,7 +1,10 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Recipe } from '../types/Recipe';
-import { ChefHat, Clock, ArrowLeft, Utensils } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
+import RecipeMetadata from '../components/RecipeMetadata';
+import RecipeIngredients from '../components/RecipeIngredients';
+import RecipeInstructions from '../components/RecipeInstructions';
 
 const RecipeDetail = () => {
   const { id } = useParams();
@@ -218,48 +221,19 @@ const RecipeDetail = () => {
                 {recipe.description}
               </p>
               
-              <div className="flex gap-6 mb-8">
-                <div className="flex items-center gap-2 text-primary-DEFAULT">
-                  <Clock size={24} />
-                  <span className="text-lg">{recipe.cookingTime}</span>
-                </div>
-                <div className="flex items-center gap-2 text-primary-DEFAULT">
-                  <ChefHat size={24} />
-                  <span className="text-lg">{recipe.difficulty}</span>
-                </div>
-                <div className="flex items-center gap-2 text-primary-DEFAULT">
-                  <Utensils size={24} />
-                  <span className="text-lg">{recipe.cuisine}</span>
-                </div>
-              </div>
+              <RecipeMetadata 
+                cookingTime={recipe.cookingTime}
+                difficulty={recipe.difficulty}
+                cuisine={recipe.cuisine}
+              />
             </div>
             
             <div className="space-y-6 fade-in" style={{ animationDelay: '0.4s' }}>
-              <div className="bg-primary-dark/50 p-6 rounded-xl border border-primary-DEFAULT/20">
-                <h2 className="font-playfair text-2xl font-bold text-primary-DEFAULT mb-4">Ingredients</h2>
-                <ul className="space-y-3">
-                  {recipe.ingredients.map((ingredient, index) => (
-                    <li key={index} className="text-gray-300 flex items-center gap-2">
-                      <span className="w-2 h-2 rounded-full bg-gold"/>
-                      {ingredient}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <RecipeIngredients ingredients={recipe.ingredients} />
             </div>
             
             <div className="space-y-6 fade-in" style={{ animationDelay: '0.5s' }}>
-              <div className="bg-primary-dark/50 p-6 rounded-xl border border-primary-DEFAULT/20">
-                <h2 className="font-playfair text-2xl font-bold text-primary-DEFAULT mb-4">Instructions</h2>
-                <ol className="space-y-4">
-                  {recipe.instructions.map((instruction, index) => (
-                    <li key={index} className="text-gray-300 flex gap-4">
-                      <span className="font-playfair text-gold font-bold">{index + 1}.</span>
-                      {instruction}
-                    </li>
-                  ))}
-                </ol>
-              </div>
+              <RecipeInstructions instructions={recipe.instructions} />
             </div>
           </div>
         </div>
