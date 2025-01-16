@@ -1,14 +1,14 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Recipe } from '../types/Recipe';
-import { ArrowLeft, Share2, ChefHat, Clock, Flame } from 'lucide-react';
-import RecipeMetadata from '../components/RecipeMetadata';
+import { ArrowLeft } from 'lucide-react';
 import RecipeIngredients from '../components/RecipeIngredients';
 import RecipeInstructions from '../components/RecipeInstructions';
-import { useToast } from "@/components/ui/use-toast";
+import RecipeHeader from '../components/recipe/RecipeHeader';
+import RecipeImage from '../components/recipe/RecipeImage';
+import RecipeCookingInfo from '../components/recipe/RecipeCookingInfo';
 
 const RecipeDetail = () => {
-  const { toast } = useToast();
   const { id } = useParams();
   
   const recipes: Recipe[] = [
@@ -180,24 +180,6 @@ const RecipeDetail = () => {
     "Taste and adjust seasoning as needed"
   ];
 
-  const handleShare = async () => {
-    try {
-      await navigator.clipboard.writeText(window.location.href);
-      toast({
-        title: "Link copied!",
-        description: "Recipe link has been copied to your clipboard",
-        duration: 2000,
-      });
-    } catch (err) {
-      toast({
-        title: "Failed to copy",
-        description: "Could not copy the link to clipboard",
-        variant: "destructive",
-        duration: 2000,
-      });
-    }
-  };
-
   if (!recipe) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -227,85 +209,16 @@ const RecipeDetail = () => {
         </Link>
         
         <div className="grid md:grid-cols-2 gap-12">
-          <div className="space-y-6">
-            <div className="fade-in" style={{ animationDelay: '0.2s' }}>
-              <div className="relative overflow-hidden rounded-2xl shadow-xl hover-scale">
-                <img 
-                  src={recipe.image} 
-                  alt={recipe.title} 
-                  className="w-full h-[500px] object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"/>
-              </div>
-              
-              <div className="mt-6 space-y-4">
-                <div className="flex flex-wrap gap-2">
-                  {recipe.category.map((cat, index) => (
-                    <span 
-                      key={index}
-                      className="px-3 py-1 rounded-full bg-primary-DEFAULT/20 text-primary-DEFAULT text-sm border border-primary-DEFAULT/30"
-                    >
-                      {cat}
-                    </span>
-                  ))}
-                </div>
-                
-                <button 
-                  className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-primary-dark/50 border border-primary-DEFAULT/20 text-primary-DEFAULT hover:bg-primary-DEFAULT/10 transition-colors"
-                  onClick={handleShare}
-                >
-                  <Share2 size={20} />
-                  Share Recipe
-                </button>
-
-                {/* Cooking Tips Section */}
-                <div className="bg-primary-dark/50 rounded-lg border border-primary-DEFAULT/20 p-4 space-y-4">
-                  <h3 className="font-playfair text-xl text-primary-DEFAULT flex items-center gap-2">
-                    <ChefHat size={20} />
-                    Cooking Tips
-                  </h3>
-                  <ul className="space-y-2">
-                    {cookingTips.map((tip, index) => (
-                      <li key={index} className="text-gray-300 flex items-start gap-2">
-                        <Flame size={16} className="text-gold mt-1" />
-                        {tip}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Preparation Time Breakdown */}
-                <div className="bg-primary-dark/50 rounded-lg border border-primary-DEFAULT/20 p-4">
-                  <h3 className="font-playfair text-xl text-primary-DEFAULT flex items-center gap-2 mb-3">
-                    <Clock size={20} />
-                    Time Breakdown
-                  </h3>
-                  <div className="grid grid-cols-2 gap-3 text-sm">
-                    <div className="p-2 bg-primary-DEFAULT/10 rounded-lg">
-                      <p className="text-gray-400">Prep Time</p>
-                      <p className="text-primary-DEFAULT font-semibold">20 mins</p>
-                    </div>
-                    <div className="p-2 bg-primary-DEFAULT/10 rounded-lg">
-                      <p className="text-gray-400">Cook Time</p>
-                      <p className="text-primary-DEFAULT font-semibold">40 mins</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div>
+            <RecipeImage recipe={recipe} />
+            <RecipeCookingInfo cookingTips={cookingTips} />
           </div>
           
           <div className="space-y-8">
             <div className="fade-in" style={{ animationDelay: '0.3s' }}>
-              <h1 className="font-playfair text-4xl md:text-5xl font-bold gold-gradient mb-4">
-                {recipe.title}
-              </h1>
-              
-              <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                {recipe.description}
-              </p>
-              
-              <RecipeMetadata 
+              <RecipeHeader 
+                title={recipe.title}
+                description={recipe.description}
                 cookingTime={recipe.cookingTime}
                 difficulty={recipe.difficulty}
                 cuisine={recipe.cuisine}
