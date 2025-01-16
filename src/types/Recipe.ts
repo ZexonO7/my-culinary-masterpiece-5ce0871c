@@ -7,6 +7,6 @@ export interface Recipe {
   instructions: string[];
   cookingTime: string;
   difficulty: "Easy" | "Medium" | "Hard";
-  cuisine: "Indian" | "Italian";
+  cuisine: "Indian" | "Italian" | "American";
   category: ("all" | "vegan" | "vegetarian" | "desserts" | "non-veg")[];
 }

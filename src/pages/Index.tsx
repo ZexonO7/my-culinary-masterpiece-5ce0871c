@@ -191,7 +191,7 @@ const Index = () => {
       ],
       cookingTime: "1h",
       difficulty: "Easy",
-      cuisine: "Italian",
+      cuisine: "American",
       category: ["vegetarian"]
     }
   ];
