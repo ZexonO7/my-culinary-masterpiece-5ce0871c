@@ -5,8 +5,10 @@ import { ArrowLeft, Share2, ChefHat, Clock, Flame } from 'lucide-react';
 import RecipeMetadata from '../components/RecipeMetadata';
 import RecipeIngredients from '../components/RecipeIngredients';
 import RecipeInstructions from '../components/RecipeInstructions';
+import { useToast } from "@/components/ui/use-toast";
 
 const RecipeDetail = () => {
+  const { toast } = useToast();
   const { id } = useParams();
   
   const recipes: Recipe[] = [
@@ -178,6 +180,24 @@ const RecipeDetail = () => {
     "Taste and adjust seasoning as needed"
   ];
 
+  const handleShare = async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      toast({
+        title: "Link copied!",
+        description: "Recipe link has been copied to your clipboard",
+        duration: 2000,
+      });
+    } catch (err) {
+      toast({
+        title: "Failed to copy",
+        description: "Could not copy the link to clipboard",
+        variant: "destructive",
+        duration: 2000,
+      });
+    }
+  };
+
   if (!recipe) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -232,7 +252,7 @@ const RecipeDetail = () => {
                 
                 <button 
                   className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-primary-dark/50 border border-primary-DEFAULT/20 text-primary-DEFAULT hover:bg-primary-DEFAULT/10 transition-colors"
-                  onClick={() => navigator.clipboard.writeText(window.location.href)}
+                  onClick={handleShare}
                 >
                   <Share2 size={20} />
                   Share Recipe
