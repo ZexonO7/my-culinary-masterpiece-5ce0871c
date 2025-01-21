@@ -36,10 +36,20 @@ export default {
       },
       animation: {
         "fade-up": "fadeUp 0.5s ease-out forwards",
+        "slide-up": "slideUp 0.8s ease-out forwards",
+        "fade-in-scroll": "fadeInScroll 1s ease-out forwards",
       },
       keyframes: {
         fadeUp: {
           "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        slideUp: {
+          "0%": { opacity: "0", transform: "translateY(40px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        fadeInScroll: {
+          "0%": { opacity: "0", transform: "translateY(30px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
       },
