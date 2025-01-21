@@ -14,28 +14,66 @@
   background: rgba(26, 31, 44, 0.8);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(155, 135, 245, 0.2);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.recipe-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(155, 135, 245, 0.1),
+    transparent
+  );
+  animation: shimmer 2s linear infinite;
 }
 
 .recipe-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(155, 135, 245, 0.1);
+  transform: translateY(-8px);
+  box-shadow: 
+    0 10px 20px rgba(155, 135, 245, 0.1),
+    0 6px 6px rgba(0, 0, 0, 0.1);
+  border-color: rgba(155, 135, 245, 0.4);
 }
 
 .gold-gradient {
   background: linear-gradient(135deg, #FFD700 0%, #FFC000 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.gold-gradient::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #FFD700, transparent);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.gold-gradient:hover::after {
+  transform: scaleX(1);
 }
 
 .fade-in {
-  animation: fadeIn 0.3s ease-in;
+  animation: fadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .scroll-fade-in {
   opacity: 0;
   transform: translateY(20px);
-  transition: all 0.6s ease-out;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .scroll-fade-in.visible {
@@ -55,11 +93,11 @@
 }
 
 .hover-scale {
-  transition: transform 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hover-scale:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 
 /* Intersection Observer animations */
@@ -67,11 +105,51 @@
   opacity: 0;
   visibility: hidden;
   transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out, visibility 0.6s ease-out;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .scroll-trigger.is-visible {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+
+/* Enhanced card interactions */
+.recipe-card:hover img {
+  transform: scale(1.05);
+}
+
+.recipe-card img {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Floating animation for specific elements */
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Gradient border animation */
+.gradient-border {
+  position: relative;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  border-radius: 0.5rem;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: -2px;
+  border-radius: inherit;
+  background: linear-gradient(
+    45deg,
+    rgba(155, 135, 245, 0.5),
+    rgba(255, 215, 0, 0.5)
+  );
+  z-index: -1;
+  animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
