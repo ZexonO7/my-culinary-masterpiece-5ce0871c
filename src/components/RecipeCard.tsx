@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Recipe } from '../types/Recipe';
 import { Clock, ChefHat } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 interface RecipeCardProps {
   recipe: Recipe;
@@ -9,15 +9,33 @@ interface RecipeCardProps {
 
 const RecipeCard: React.FC<RecipeCardProps> = ({ recipe }) => {
   const [imageError, setImageError] = useState(false);
+  const [isZooming, setIsZooming] = useState(false);
+  const navigate = useNavigate();
 
   const handleImageError = () => {
     console.error(`Failed to load image for recipe: ${recipe.title}`);
     setImageError(true);
   };
 
+  const handleClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsZooming(true);
+    console.log('Recipe card clicked, starting zoom animation');
+    
+    // Wait for animation to complete before navigating
+    setTimeout(() => {
+      console.log('Zoom animation complete, navigating to recipe detail');
+      navigate(`/recipe/${recipe.id}`);
+    }, 500); // Match this with the CSS transition duration
+  };
+
   return (
-    <Link to={`/recipe/${recipe.id}`}>
-      <div className="recipe-card rounded-lg p-4 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-lg">
+    <Link to={`/recipe/${recipe.id}`} onClick={handleClick}>
+      <div 
+        className={`recipe-card rounded-lg p-4 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-lg ${
+          isZooming ? 'scale-150 opacity-0' : ''
+        }`}
+      >
         <div className="relative h-48 w-full overflow-hidden rounded-lg mb-4 transition-transform duration-300 hover:scale-105">
           <img
             src={imageError ? '/placeholder.svg' : recipe.image}
