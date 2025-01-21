@@ -17,28 +17,27 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ recipe }) => {
 
   return (
     <Link to={`/recipe/${recipe.id}`}>
-      <div className="recipe-card gradient-border rounded-lg p-4">
-        <div className="relative h-48 w-full overflow-hidden rounded-lg mb-4">
+      <div className="recipe-card rounded-lg p-4 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-lg">
+        <div className="relative h-48 w-full overflow-hidden rounded-lg mb-4 transition-transform duration-300 hover:scale-105">
           <img
             src={imageError ? '/placeholder.svg' : recipe.image}
             alt={recipe.title}
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-300"
             onError={handleImageError}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         </div>
-        <h3 className="font-playfair text-xl font-bold mb-2 gold-gradient">
+        <h3 className="font-playfair text-xl font-bold mb-2 gold-gradient transition-colors duration-300">
           {recipe.title}
         </h3>
-        <p className="text-gray-300 mb-4 line-clamp-2 group-hover:text-white transition-colors duration-300">
+        <p className="text-gray-300 mb-4 transition-colors duration-300">
           {recipe.description}
         </p>
         <div className="flex justify-between items-center text-sm text-primary-DEFAULT">
-          <div className="flex items-center gap-2 transition-all duration-300 hover:text-gold floating">
+          <div className="flex items-center gap-2 transition-all duration-300 hover:text-gold">
             <Clock size={16} />
             <span>{recipe.cookingTime}</span>
           </div>
-          <div className="flex items-center gap-2 transition-all duration-300 hover:text-gold floating">
+          <div className="flex items-center gap-2 transition-all duration-300 hover:text-gold">
             <ChefHat size={16} />
             <span>{recipe.difficulty}</span>
           </div>
