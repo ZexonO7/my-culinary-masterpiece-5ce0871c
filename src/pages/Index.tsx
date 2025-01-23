@@ -76,7 +76,7 @@ const Index = () => {
       id: 3,
       title: "Hyderabadi Biryani",
       description: "A royal Indian delicacy of fragrant basmati rice layered with tender meat and aromatic spices, garnished with saffron milk and mint.",
-      image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80",
+      image: "/placeholder.svg",
       ingredients: [
         "Aged basmati rice",
         "Premium quality meat (lamb or chicken)",
@@ -140,7 +140,7 @@ const Index = () => {
       id: 5,
       title: "Mushroom Red Pasta",
       description: "A delightful Italian pasta with sautéed mushrooms in a rich tomato sauce, enhanced with fresh herbs and Parmesan cheese.",
-      image: "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80",
+      image: "/placeholder.svg",
       ingredients: [
         "Fettuccine pasta",
         "Mixed mushrooms (portobello, cremini, shiitake)",
@@ -170,7 +170,7 @@ const Index = () => {
       id: 6,
       title: "Roasted Smashed Potatoes",
       description: "Crispy on the outside, fluffy on the inside, these garlic-herb roasted smashed potatoes are the perfect side dish for any meal.",
-      image: "https://images.unsplash.com/photo-1585148859476-c8752681e37a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80",
+      image: "/placeholder.svg",
       ingredients: [
         "Baby potatoes or small Yukon Gold potatoes",
         "Extra virgin olive oil",
