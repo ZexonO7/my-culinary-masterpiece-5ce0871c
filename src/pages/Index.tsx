@@ -45,7 +45,7 @@ const Index = () => {
         "Then add your tender Cottage cheese with some Kasturi methi and honey",
         "Add some spices and cream on top as a Garnish and Enjoy"
       ],
-      cookingTime: "1h30m",
+      cookingTime: "1h10m",
       difficulty: "Hard",
       cuisine: "Indian",
       category: ["vegetarian"]
