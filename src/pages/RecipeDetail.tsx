@@ -186,7 +186,8 @@ const RecipeDetail = () => {
     "Prep all ingredients before starting",
     "Keep heat at medium-high for best results",
     "Let ingredients come to room temperature",
-    "Taste and adjust seasoning as needed"
+    "Taste and adjust seasoning as needed",
+    "If the tomato's are too sour add a pinch of baking soda to neutralize the acid"
   ];
 
   if (!recipe) {
