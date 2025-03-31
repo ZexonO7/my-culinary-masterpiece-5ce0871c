@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 interface RecipeInstructionsProps {
@@ -11,8 +12,8 @@ const RecipeInstructions: React.FC<RecipeInstructionsProps> = ({ instructions })
       <ol className="space-y-4">
         {instructions.map((instruction, index) => (
           <li key={index} className="text-gray-300 flex gap-4">
-            <span className="font-playfair text-gold font-bold">{index + 1}.</span>
-            {instruction}
+            <span className="font-playfair text-gold font-bold min-w-[20px]">{index + 1}.</span>
+            <p className="leading-relaxed">{instruction}</p>
           </li>
         ))}
       </ol>

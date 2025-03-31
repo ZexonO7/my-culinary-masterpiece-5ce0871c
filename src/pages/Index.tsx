@@ -36,12 +36,14 @@ const Index = () => {
         "Honey"
       ],
       instructions: [
-        "Blend tomatoes, cashews, and Kashmiri chilies into a smooth paste",
-        "Sauté ginger-garlic paste in butter until fragrant",
-        "Add tomato paste and cook until oil separates",
-        "Mix in spices and simmer with cream",
-        "Add paneer cubes and cook gently",
-        "Finish with kasoori methi and fresh coriander"
+        "Heat up some ghee in a kadhi/Pan add your whole spics- Elichi, bay Leaf, Long and add your Kashmiri red mirch",
+        "After the mirch starts to burn, add some chopped onions and sauté for 3-4 mins until they start to sweat then add your ginger-garlic paste cook for a bit and add your curd mixture of spics(Cumin seed powder, Garam Masala, Dagi mirch)",
+        "Sauté and add your scooped and chopped tomato's and cashews with more of the same spics blend",
+        "Add water till the tomato's are mostly submerged, let them cook and then take out the whole spices, blend with some water and not more than 2-4 drops kawra for the scent",
+        "Strain the fine gravy and add it back in the pan with some finely chopped tomato's and onions sautéed in the same spice blend with Butter",
+        "While the gravy is cooking chop your cottage cheese into cubes and put them in some warm salted water to get tender for 4-5mins",
+        "Then add your tender Cottage cheese with some Kasturi methi and honey",
+        "Add some spices and cream on top as a Garnish and Enjoy"
       ],
       cookingTime: "1h30m",
       difficulty: "Hard",
