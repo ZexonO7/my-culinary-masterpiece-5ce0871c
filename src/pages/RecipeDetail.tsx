@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Recipe } from '../types/Recipe';
@@ -18,17 +19,24 @@ const RecipeDetail = () => {
       description: "A rich North Indian curry with tender paneer cubes in a creamy tomato-based gravy, perfectly spiced for an authentic restaurant-style experience.",
       image: "/lovable-uploads/6a5c80a4-808b-4681-9f22-7daadd81a361.png",
       ingredients: [
-        "Fresh paneer cubes",
-        "Ripe tomatoes",
-        "Heavy cream",
-        "Kashmiri red chilies",
-        "Cashew nuts",
-        "Fresh butter",
-        "Kasoori methi (dried fenugreek leaves)",
-        "Ginger-garlic paste",
-        "Garam masala",
-        "Honey",
-        "Fresh coriander leaves"
+        "Tomatos",
+        "Cottage cheese (Paneer)",
+        "Onions",
+        "Ginger Garlic Paste",
+        "Kawra",
+        "Garam Masala",
+        "Dagi Mirch",
+        "Cumin seed powder",
+        "Kasturi Mathi",
+        "Long",
+        "Elichi",
+        "Bay leaf",
+        "Kashmiri Red chilli",
+        "Butter",
+        "Curd",
+        "Cream",
+        "Cashews",
+        "Honey"
       ],
       instructions: [
         "Blend tomatoes, cashews, and Kashmiri chilies into a smooth paste",
