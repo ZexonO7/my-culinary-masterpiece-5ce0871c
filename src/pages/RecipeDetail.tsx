@@ -47,7 +47,7 @@ const RecipeDetail = () => {
         "Then add your tender Cottage cheese with some Kasturi methi and honey",
         "Add some spices and cream on top as a Garnish and Enjoy"
       ],
-      cookingTime: "1h50mins",
+      cookingTime: "1h10mins",
       difficulty: "Hard",
       cuisine: "Indian",
       category: ["vegetarian"]
