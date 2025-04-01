@@ -1,26 +1,22 @@
-
 import React from 'react';
 import { ChefHat, Clock, Flame } from 'lucide-react';
-
 interface RecipeCookingInfoProps {
   cookingTips: string[];
 }
-
-const RecipeCookingInfo: React.FC<RecipeCookingInfoProps> = ({ cookingTips }) => {
-  return (
-    <div className="space-y-4">
+const RecipeCookingInfo: React.FC<RecipeCookingInfoProps> = ({
+  cookingTips
+}) => {
+  return <div className="space-y-4">
       <div className="bg-primary-dark/50 rounded-lg border border-primary-DEFAULT/20 p-4 space-y-4">
         <h3 className="font-playfair text-xl text-primary-DEFAULT flex items-center gap-2">
           <ChefHat size={20} />
           Cooking Tips
         </h3>
         <ul className="space-y-2">
-          {cookingTips.map((tip, index) => (
-            <li key={index} className="text-gray-300 flex items-start gap-2">
+          {cookingTips.map((tip, index) => <li key={index} className="text-gray-300 flex items-start gap-2">
               <Flame size={20} className="text-gold" />
               {tip}
-            </li>
-          ))}
+            </li>)}
         </ul>
       </div>
 
@@ -36,12 +32,10 @@ const RecipeCookingInfo: React.FC<RecipeCookingInfoProps> = ({ cookingTips }) =>
           </div>
           <div className="p-2 bg-primary-DEFAULT/10 rounded-lg">
             <p className="text-gray-400">Cook Time</p>
-            <p className="text-primary-DEFAULT font-semibold">40 mins</p>
+            <p className="text-primary-DEFAULT font-semibold">50 mins</p>
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default RecipeCookingInfo;
