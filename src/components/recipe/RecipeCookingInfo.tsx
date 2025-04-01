@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ChefHat, Clock, Flame } from 'lucide-react';
 
@@ -16,7 +17,7 @@ const RecipeCookingInfo: React.FC<RecipeCookingInfoProps> = ({ cookingTips }) =>
         <ul className="space-y-2">
           {cookingTips.map((tip, index) => (
             <li key={index} className="text-gray-300 flex items-start gap-2">
-              <Flame size={16} className="text-gold mt-1" />
+              <Flame size={20} className="text-gold" />
               {tip}
             </li>
           ))}
