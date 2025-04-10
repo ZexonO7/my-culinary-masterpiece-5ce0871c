@@ -212,15 +212,25 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative">
+      {/* Decorative corners */}
+      <div className="mandala-corner top-left"></div>
+      <div className="mandala-corner top-right"></div>
+      <div className="mandala-corner bottom-left"></div>
+      <div className="mandala-corner bottom-right"></div>
+      
       <HeroSection />
       <AboutSection />
-      <div className="container mx-auto px-4 py-8">
+      
+      <div className="container mx-auto px-4 py-8 decorative-border">
         <h1 className="text-5xl font-playfair font-bold text-center mb-8">
           <span className="text-white">Finger Licking </span>
           <span className="gold-gradient underline">Recipes</span>
         </h1>
       </div>
+      
+      <div className="section-divider"></div>
+      
       <RecipeFilters currentFilter={currentFilter} onFilterChange={setCurrentFilter} />
       <RecipeGrid recipes={recipes} currentFilter={currentFilter} />
     </div>
