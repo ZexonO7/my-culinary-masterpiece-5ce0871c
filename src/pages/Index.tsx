@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
@@ -80,7 +79,8 @@ const Index = () => {
       cookingTime: "45m",
       difficulty: "Easy",
       cuisine: "Italian",
-      category: ["vegetarian"]
+      category: ["vegetarian"],
+      locked: true
     },
     {
       id: 3,
@@ -112,7 +112,8 @@ const Index = () => {
       cookingTime: "2h",
       difficulty: "Hard",
       cuisine: "Indian",
-      category: ["all", "vegetarian", "non-veg"]
+      category: ["all", "vegetarian", "non-veg"],
+      locked: true
     },
     {
       id: 4,
@@ -144,7 +145,8 @@ const Index = () => {
       cookingTime: "1h",
       difficulty: "Medium",
       cuisine: "Indian",
-      category: ["vegetarian"]
+      category: ["vegetarian"],
+      locked: true
     },
     {
       id: 5,
@@ -174,7 +176,8 @@ const Index = () => {
       cookingTime: "45m",
       difficulty: "Medium",
       cuisine: "Italian",
-      category: ["vegetarian"]
+      category: ["vegetarian"],
+      locked: true
     },
     {
       id: 6,

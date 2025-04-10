@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, Navigate } from 'react-router-dom';
 import { Recipe } from '../types/Recipe';
 import { ArrowLeft } from 'lucide-react';
 import RecipeIngredients from '../components/RecipeIngredients';
@@ -82,7 +82,8 @@ const RecipeDetail = () => {
       cookingTime: "45m",
       difficulty: "Easy",
       cuisine: "Italian",
-      category: ["vegetarian"]
+      category: ["vegetarian"],
+      locked: true
     },
     {
       id: 3,
@@ -114,7 +115,8 @@ const RecipeDetail = () => {
       cookingTime: "2h",
       difficulty: "Hard",
       cuisine: "Indian",
-      category: ["vegetarian", "non-veg"]
+      category: ["vegetarian", "non-veg"],
+      locked: true
     },
     {
       id: 4,
@@ -146,7 +148,8 @@ const RecipeDetail = () => {
       cookingTime: "1h",
       difficulty: "Medium",
       cuisine: "Indian",
-      category: ["vegetarian"]
+      category: ["vegetarian"],
+      locked: true
     },
     {
       id: 5,
@@ -176,7 +179,8 @@ const RecipeDetail = () => {
       cookingTime: "45m",
       difficulty: "Medium",
       cuisine: "Italian",
-      category: ["vegetarian"]
+      category: ["vegetarian"],
+      locked: true
     }
   ];
 
@@ -205,6 +209,10 @@ const RecipeDetail = () => {
         </div>
       </div>
     );
+  }
+
+  if (recipe.locked) {
+    return <Navigate to="/" replace />;
   }
 
   return (

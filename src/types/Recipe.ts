@@ -1,3 +1,4 @@
+
 export interface Recipe {
   id: number;
   title: string;
@@ -9,4 +10,5 @@ export interface Recipe {
   difficulty: "Easy" | "Medium" | "Hard";
   cuisine: "Indian" | "Italian" | "American";
   category: ("all" | "vegan" | "vegetarian" | "desserts" | "non-veg")[];
+  locked?: boolean;
 }
