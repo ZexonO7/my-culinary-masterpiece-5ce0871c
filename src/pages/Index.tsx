@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
@@ -213,26 +212,15 @@ const Index = () => {
 
   return (
     <div className="min-h-screen relative">
-      {/* Pattern overlay */}
-      <div className="pattern-overlay"></div>
-      
-      {/* Decorative corners */}
-      <div className="mandala-corner top-left"></div>
-      <div className="mandala-corner top-right"></div>
-      <div className="mandala-corner bottom-left"></div>
-      <div className="mandala-corner bottom-right"></div>
-      
       <HeroSection />
       <AboutSection />
       
-      <div className="container mx-auto px-4 py-8 decorative-border">
+      <div className="container mx-auto px-4 py-8">
         <h1 className="text-5xl font-playfair font-bold text-center mb-8">
           <span className="text-white">Finger Licking </span>
           <span className="gold-gradient underline">Recipes</span>
         </h1>
       </div>
-      
-      <div className="section-divider"></div>
       
       <RecipeFilters currentFilter={currentFilter} onFilterChange={setCurrentFilter} />
       <RecipeGrid recipes={recipes} currentFilter={currentFilter} />
