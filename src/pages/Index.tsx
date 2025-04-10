@@ -213,6 +213,9 @@ const Index = () => {
 
   return (
     <div className="min-h-screen relative">
+      {/* Pattern overlay */}
+      <div className="pattern-overlay"></div>
+      
       {/* Decorative corners */}
       <div className="mandala-corner top-left"></div>
       <div className="mandala-corner top-right"></div>
