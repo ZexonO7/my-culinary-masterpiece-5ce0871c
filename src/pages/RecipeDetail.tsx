@@ -181,6 +181,35 @@ const RecipeDetail = () => {
       cuisine: "Italian",
       category: ["vegetarian"],
       locked: true
+    },
+    {
+      id: 6,
+      title: "Roasted Smashed Potatoes",
+      description: "Crispy on the outside, fluffy on the inside, these garlic-herb roasted smashed potatoes are the perfect side dish for any meal.",
+      image: "/placeholder.svg",
+      ingredients: [
+        "Baby potatoes or small Yukon Gold potatoes",
+        "Extra virgin olive oil",
+        "Fresh rosemary and thyme",
+        "Garlic cloves, minced",
+        "Sea salt and black pepper",
+        "Fresh parsley for garnish",
+        "Grated Parmesan cheese (optional)"
+      ],
+      instructions: [
+        "Boil potatoes in salted water until fork-tender (about 20-25 minutes)",
+        "Drain potatoes and let them cool slightly",
+        "Preheat oven to 425°F (220°C)",
+        "Place potatoes on a baking sheet and gently smash each one with a fork",
+        "Drizzle with olive oil and sprinkle with garlic, herbs, salt, and pepper",
+        "Roast for 20-25 minutes until crispy and golden brown",
+        "Garnish with fresh parsley and Parmesan if desired"
+      ],
+      cookingTime: "1h",
+      difficulty: "Easy",
+      cuisine: "American",
+      category: ["vegetarian"],
+      locked: true
     }
   ];
 

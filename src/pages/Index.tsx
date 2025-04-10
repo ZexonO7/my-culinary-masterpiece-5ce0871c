@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
@@ -205,7 +206,8 @@ const Index = () => {
       cookingTime: "1h",
       difficulty: "Easy",
       cuisine: "American",
-      category: ["vegetarian"]
+      category: ["vegetarian"],
+      locked: true
     }
   ];
 
