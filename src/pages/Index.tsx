@@ -32,7 +32,9 @@ const Index = () => {
         "Curd",
         "Cream",
         "Cashews",
-        "Honey"
+        "Honey",
+        "Ghee (Clarified Butter)",
+        "Salt"
       ],
       instructions: [
         "Heat up some ghee in a kadhi/Pan add your whole spics- Elichi, bay Leaf, Long and add your Kashmiri red mirch",
