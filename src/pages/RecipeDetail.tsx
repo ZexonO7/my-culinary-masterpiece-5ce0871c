@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Recipe } from '../types/Recipe';
@@ -17,7 +16,7 @@ const RecipeDetail = () => {
       id: 1,
       title: "Paneer Butter Masala",
       description: "A rich North Indian curry with tender paneer cubes in a creamy tomato-based gravy, perfectly spiced for an authentic restaurant-style experience.",
-      image: "/lovable-uploads/6a5c80a4-808b-4681-9f22-7daadd81a361.png",
+      image: "/lovable-uploads/bea5f6f6-0e03-4e8c-9c74-b42f1d9c6dc0.png",
       ingredients: [
         "Tomatos",
         "Cottage cheese (Paneer)",
