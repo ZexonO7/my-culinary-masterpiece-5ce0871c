@@ -6,7 +6,6 @@ const AboutMe = () => {
   return (
     <div className="min-h-screen py-16 px-4 bg-gradient-to-b from-dark via-primary-dark to-dark">
       <div className="max-w-4xl mx-auto">
-        {/* Navigation */}
         <nav className="flex justify-between items-center mb-12">
           <Link 
             to="/" 
@@ -24,7 +23,6 @@ const AboutMe = () => {
 
         <div className="bg-primary-dark/80 backdrop-blur-lg rounded-lg p-8 shadow-xl border border-primary-DEFAULT/20 animate-fade-up">
           <div className="flex flex-col md:flex-row gap-8 items-center">
-            {/* Profile Image */}
             <div className="w-48 h-48 rounded-full overflow-hidden shadow-lg ring-4 ring-primary-DEFAULT/30">
               <img
                 src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
@@ -33,7 +31,6 @@ const AboutMe = () => {
               />
             </div>
 
-            {/* Content */}
             <div className="flex-1 text-center md:text-left">
               <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-6 gold-gradient">
                 About Me
@@ -42,9 +39,8 @@ const AboutMe = () => {
                 I am 16 and I love to cook and create content. I want to explore the gates of all types of cuisine and share it with the whole world.
               </p>
               
-              {/* Instagram Link */}
               <a
-                href="https://instagram.com/your_instagram"
+                href="https://www.instagram.com/the.cooking.journey/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full hover:opacity-90 transition-all hover:scale-105 duration-300"

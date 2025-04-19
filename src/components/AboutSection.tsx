@@ -29,7 +29,7 @@ const AboutSection = () => {
               </div>
               
               <a
-                href="https://instagram.com/your_instagram"
+                href="https://www.instagram.com/the.cooking.journey/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full hover:opacity-90 transition-all hover:scale-105 duration-300"
