@@ -22,7 +22,7 @@ const RecipeDetail = () => {
         "Cottage cheese (Paneer)",
         "Onions",
         "Ginger Garlic Paste",
-        "Kawra",
+        "Kawra (optional)",
         "Garam Masala",
         "Dagi Mirch",
         "Cumin seed powder",
@@ -35,7 +35,8 @@ const RecipeDetail = () => {
         "Curd",
         "Cream",
         "Cashews",
-        "Honey",
+        "Honey/Sugar",
+        "Chaat Masala",
         "Ghee (Clarified Butter)",
         "Salt"
       ],
