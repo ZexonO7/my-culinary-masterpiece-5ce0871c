@@ -47,7 +47,7 @@ const RecipeDetail = () => {
         "Add water till the tomato's are mostly submerged, let them cook and then take out the whole spices, blend with some water and not more than 2-4 drops kawra for the scent",
         "Strain the fine gravy and add it back in the pan with some finely chopped tomato's and onions sautéed in the same spice blend and Butter",
         "While the gravy is cooking chop your cottage cheese into cubes and put them in some warm salted water to get tender for 4-5mins",
-        "Then add your tender Cottage cheese with some Kasturi methi and honey/sugar, chaat Masala",
+        "Then add your Cottage Cheese with some Kasturi methi, Honey/Suger and Chaat Masala",
         "Add some spices and cream on top as a Garnish and Enjoy"
       ],
       cookingTime: "1h10mins",
