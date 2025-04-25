@@ -1,18 +1,12 @@
 import React from 'react';
 import { Instagram } from 'lucide-react';
-
 const AboutSection = () => {
-  return (
-    <section className="py-8 bg-gradient-to-b from-dark via-primary-dark to-dark">
+  return <section className="py-8 bg-gradient-to-b from-dark via-primary-dark to-dark">
       <div className="max-w-4xl mx-auto">
         <div className="bg-primary-dark/80 backdrop-blur-lg rounded-lg p-8 shadow-xl border border-primary-DEFAULT/20 animate-fade-up">
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="w-48 h-48 rounded-full overflow-hidden shadow-lg ring-4 ring-primary-DEFAULT/30">
-              <img
-                src="/lovable-uploads/13f67694-e059-4b0b-88f2-910746049939.png"
-                alt="Advithya Bhardwaj"
-                className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
-              />
+              <img alt="Advithya Bhardwaj" className="w-full h-full object-cover hover:scale-110 transition-transform duration-300" src="/lovable-uploads/95941a6c-9cde-482d-937f-245ec128763e.jpg" />
             </div>
 
             <div className="flex-1 text-center md:text-left">
@@ -28,12 +22,7 @@ const AboutSection = () => {
                 </p>
               </div>
               
-              <a
-                href="https://www.instagram.com/the.cooking.journey/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full hover:opacity-90 transition-all hover:scale-105 duration-300"
-              >
+              <a href="https://www.instagram.com/the.cooking.journey/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full hover:opacity-90 transition-all hover:scale-105 duration-300">
                 <Instagram className="w-5 h-5" />
                 Follow me on Instagram
               </a>
@@ -41,8 +30,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
