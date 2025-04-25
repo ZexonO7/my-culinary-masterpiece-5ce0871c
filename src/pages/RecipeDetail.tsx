@@ -85,8 +85,7 @@ const RecipeDetail = () => {
       cookingTime: "45m",
       difficulty: "Easy",
       cuisine: "Italian",
-      category: ["vegetarian"],
-      locked: true
+      category: ["vegetarian"]
     },
     {
       id: 3,
