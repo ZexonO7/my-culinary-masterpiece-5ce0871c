@@ -78,7 +78,7 @@ const RecipeDetail = () => {
       instructions: [
         "Wash and slice the mushrooms and scallions",
         "Prepare the seasoning mixture with onion flakes, paprika, salt, and Italian seasoning",
-        "Sauté the mushrooms in a pan until the water evaporates and they begin to turn golden, then add butter, olive oil, and salt",
+        "Cook the mushrooms in a pan until the water evaporates and they begin to turn golden, then add butter, olive oil, and salt",
         "Add ginger garlic paste and cook for 1-2 minutes until fragrant",
         "Pour in the cream, add the prepared seasonings and spicy garlic sauce, then stir to combine",
         "Simmer the sauce briefly before adding the cooked pasta and chopped green scallions",
@@ -221,10 +221,8 @@ const RecipeDetail = () => {
 
   const cookingTips = [
     "Prep all ingredients before starting",
-    "Keep heat at medium-high for best results",
-    "Let ingredients come to room temperature",
-    "Taste and adjust seasoning as needed",
-    "If the tomato's are too sour add a pinch of baking soda to neutralize the acid"
+    "If the tomato's are too sour add a pinch of baking soda to neutralize the acid",
+    "Keep heat at medium-high for best results"
   ];
 
   if (!recipe) {

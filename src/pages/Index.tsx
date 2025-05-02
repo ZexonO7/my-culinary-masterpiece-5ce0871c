@@ -76,7 +76,7 @@ const Index = () => {
       instructions: [
         "Wash and slice the mushrooms and scallions",
         "Prepare the seasoning mixture with onion flakes, paprika, salt, and Italian seasoning",
-        "Sauté the mushrooms in a pan until the water evaporates and they begin to turn golden, then add butter, olive oil, and salt",
+        "Cook the mushrooms in a pan until the water evaporates and they begin to turn golden, then add butter, olive oil, and salt",
         "Add ginger garlic paste and cook for 1-2 minutes until fragrant",
         "Pour in the cream, add the prepared seasonings and spicy garlic sauce, then stir to combine",
         "Simmer the sauce briefly before adding the cooked pasta and chopped green scallions",
