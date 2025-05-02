@@ -219,11 +219,16 @@ const RecipeDetail = () => {
 
   const recipe = recipes.find(r => r.id === Number(id));
 
-  const cookingTips = [
-    "Prep all ingredients before starting",
-    "If the tomato's are too sour add a pinch of baking soda to neutralize the acid",
-    "Keep heat at medium-high for best results"
-  ];
+  const cookingTips = id === '2' ? 
+    [
+      "Prep all ingredients before starting",
+      "Keep heat at medium-high for best results"
+    ] : 
+    [
+      "Prep all ingredients before starting",
+      "If the tomato's are too sour add a pinch of baking soda to neutralize the acid",
+      "Keep heat at medium-high for best results"
+    ];
 
   if (!recipe) {
     return (
