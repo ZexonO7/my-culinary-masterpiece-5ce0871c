@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
@@ -74,8 +73,7 @@ const Index = () => {
         "Parmigiano-Reggiano"
       ],
       instructions: [
-        "Wash your mushrooms and cut them",
-        "Cut your Scallions",
+        "Wash your mushrooms and Scallions and slice them up",
         "Prepare the seasoning with onion flakes, paprika, salt, Italian seasoning",
         "Dry your mushrooms in the pan and after the water evaporates and they start to become golden, add your fat and salt",
         "Add your ginger garlic paste then cook a bit",
