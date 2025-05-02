@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ChefHat, Clock, Flame } from 'lucide-react';
 interface RecipeCookingInfoProps {
@@ -28,11 +29,11 @@ const RecipeCookingInfo: React.FC<RecipeCookingInfoProps> = ({
         <div className="grid grid-cols-2 gap-3 text-sm">
           <div className="p-2 bg-primary-DEFAULT/10 rounded-lg">
             <p className="text-gray-400">Prep Time</p>
-            <p className="text-primary-DEFAULT font-semibold">20 mins</p>
+            <p className="text-primary-DEFAULT font-semibold">15 mins</p>
           </div>
           <div className="p-2 bg-primary-DEFAULT/10 rounded-lg">
             <p className="text-gray-400">Cook Time</p>
-            <p className="text-primary-DEFAULT font-semibold">50mins</p>
+            <p className="text-primary-DEFAULT font-semibold">30 mins</p>
           </div>
         </div>
       </div>
