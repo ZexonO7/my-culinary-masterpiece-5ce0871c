@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
@@ -73,13 +74,13 @@ const Index = () => {
         "Parmigiano-Reggiano"
       ],
       instructions: [
-        "Wash your mushrooms and Scallions and slice them up",
-        "Prepare the seasoning with onion flakes, paprika, salt, Italian seasoning",
-        "Dry your mushrooms in the pan and after the water evaporates and they start to become golden, add your fat and salt",
-        "Add your ginger garlic paste then cook a bit",
-        "Add your cream, seasonings and spicy garlic sauce",
-        "Cook it a bit and then add your chopped green scallions and cooked pasta",
-        "Garnish with some more paprika and scallions, then serve"
+        "Wash and slice the mushrooms and scallions",
+        "Prepare the seasoning mixture with onion flakes, paprika, salt, and Italian seasoning",
+        "Sauté the mushrooms in a pan until the water evaporates and they begin to turn golden, then add butter, olive oil, and salt",
+        "Add ginger garlic paste and cook for 1-2 minutes until fragrant",
+        "Pour in the cream, add the prepared seasonings and spicy garlic sauce, then stir to combine",
+        "Simmer the sauce briefly before adding the cooked pasta and chopped green scallions",
+        "Garnish with additional paprika and scallions before serving"
       ],
       cookingTime: "45m",
       difficulty: "Easy",
