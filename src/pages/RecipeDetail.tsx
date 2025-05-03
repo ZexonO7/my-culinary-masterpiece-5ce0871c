@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Recipe } from '../types/Recipe';
@@ -58,7 +59,7 @@ const RecipeDetail = () => {
     {
       id: 2,
       title: "Golden Mushroom Pasta",
-      description: "An elegant Italian pasta featuring al dente noodles in a saffron-infused sauce with wild mushrooms, creating a visually stunning golden dish.",
+      description: "An elegant Italian pasta featuring al dente noodles in a mushroom sauce, creating a visually stunning golden dish.",
       image: "/lovable-uploads/3d41ae60-1aec-466b-980d-16e5f2e55e45.png",
       ingredients: [
         "Scallions",
@@ -73,7 +74,7 @@ const RecipeDetail = () => {
         "Cream",
         "Spicy garlic sauce",
         "Good quality Pasta (Penne)",
-        "Parmigiano-Reggiano"
+        "Parmigiano-Reggiano (optional)"
       ],
       instructions: [
         "Wash and slice the mushrooms and scallions",
@@ -82,6 +83,8 @@ const RecipeDetail = () => {
         "Add ginger garlic paste and cook for 1-2 minutes until fragrant",
         "Pour in the cream, add the prepared seasonings and spicy garlic sauce, then stir to combine",
         "Simmer the sauce briefly before adding the cooked pasta and chopped green scallions",
+        "Add Parmigiano-Reggiano if desired and mix well",
+        "Add a ladleful of starchy pasta water and mix until the sauce reaches desired consistency",
         "Garnish with additional paprika and scallions before serving"
       ],
       cookingTime: "45m",
@@ -222,7 +225,8 @@ const RecipeDetail = () => {
   const cookingTips = id === '2' ? 
     [
       "Prep all ingredients before starting",
-      "Keep heat at medium-high for best results"
+      "Keep heat at medium-high for best results",
+      "Adjust the seasoning and spicy garlic sauce as per your taste"
     ] : 
     [
       "Prep all ingredients before starting",
