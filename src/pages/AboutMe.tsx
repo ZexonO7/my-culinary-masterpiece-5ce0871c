@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Instagram, Clock, Award, Utensils } from 'lucide-react';
+
 const AboutMe = () => {
   return <div className="min-h-screen py-16 px-4 bg-gradient-to-b from-dark via-primary-dark to-dark">
       <div className="max-w-4xl mx-auto">
@@ -61,21 +63,29 @@ const AboutMe = () => {
                   <Award className="text-primary-DEFAULT w-6 h-6" />
                   <h3 className="text-xl font-semibold">My Mission</h3>
                 </div>
-                <p className="text-gray-300">My goal is to share my love for cooking and become one of the best Chefs in the World, I'm also an Aspiring Restauranteur and Content Creator.  </p>
+                <p className="text-gray-300">My goal is to share my love for cooking and become one of the best Chefs in the World, I'm also an Aspiring Restauranteur and Content Creator.  </p>
               </div>
             </div>
             
-            <div className="mt-8">
-              <h2 className="text-2xl font-bold mb-4 gold-gradient">My Favorite Cuisines</h2>
-              <div className="flex flex-wrap gap-2">
-                {["Indian", "Italian", "Mexican", "Japanese", "Mediterranean", "Thai"].map(cuisine => <span key={cuisine} className="px-3 py-1 bg-primary-DEFAULT/20 rounded-full border border-primary-DEFAULT/30 text-primary-light">
-                    {cuisine}
-                  </span>)}
-              </div>
+            <div className="mt-8 text-gray-300 space-y-6">
+              <p className="leading-relaxed">
+                Hey, I'm Advithya Bhardwaj.
+                I'm a content creator, chef in the making, and a tech geek who's always looking for the next big idea. My days revolve around mixing creativity with practicality — whether I'm in the kitchen cooking up new dishes, behind the camera editing videos, or figuring out how to make tech work for my next big project.
+              </p>
+              <p className="leading-relaxed">
+                I've been diving deep into content creation for a while, experimenting with everything from food videos that make you hungry to editing tutorials that actually help people improve their skills. It's all about turning raw ideas into something worth sharing, with a bit of personality sprinkled in.
+              </p>
+              <p className="leading-relaxed">
+                I also love sharing what I've learned along the way — whether it's video editing tricks, social media tips, or just random kitchen hacks. There's nothing like helping someone unlock their own creativity and get excited about what they can create.
+              </p>
+              <p className="leading-relaxed">
+                I keep things real. No fake "aesthetic" here — just passion, curiosity, and a dash of chaos. If you're into fresh perspectives, new challenges, and creativity with a real edge, you're in the right place.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>;
 };
+
 export default AboutMe;
