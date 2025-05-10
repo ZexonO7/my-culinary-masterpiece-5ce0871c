@@ -67,20 +67,23 @@ const AboutMe = () => {
               </div>
             </div>
             
-            <div className="mt-8 text-gray-300 space-y-6">
-              <p className="leading-relaxed">
-                Hey, I'm Advithya Bhardwaj.
-                I'm a content creator, chef in the making, and a tech geek who's always looking for the next big idea. My days revolve around mixing creativity with practicality — whether I'm in the kitchen cooking up new dishes, behind the camera editing videos, or figuring out how to make tech work for my next big project.
-              </p>
-              <p className="leading-relaxed">
-                I've been diving deep into content creation for a while, experimenting with everything from food videos that make you hungry to editing tutorials that actually help people improve their skills. It's all about turning raw ideas into something worth sharing, with a bit of personality sprinkled in.
-              </p>
-              <p className="leading-relaxed">
-                I also love sharing what I've learned along the way — whether it's video editing tricks, social media tips, or just random kitchen hacks. There's nothing like helping someone unlock their own creativity and get excited about what they can create.
-              </p>
-              <p className="leading-relaxed">
-                I keep things real. No fake "aesthetic" here — just passion, curiosity, and a dash of chaos. If you're into fresh perspectives, new challenges, and creativity with a real edge, you're in the right place.
-              </p>
+            <div className="mt-10 text-gray-300">
+              <h2 className="font-playfair text-3xl font-bold mb-6 gold-gradient text-center md:text-left">My Creative Journey</h2>
+              <div className="bg-primary-dark/30 p-8 rounded-lg border border-primary-DEFAULT/10 space-y-6">
+                <p className="leading-relaxed text-lg">
+                  Hey, I'm Advithya Bhardwaj.
+                  I'm a content creator, chef in the making, and a tech geek who's always looking for the next big idea. My days revolve around mixing creativity with practicality — whether I'm in the kitchen cooking up new dishes, behind the camera editing videos, or figuring out how to make tech work for my next big project.
+                </p>
+                <p className="leading-relaxed text-lg">
+                  I've been diving deep into content creation for a while, experimenting with everything from food videos that make you hungry to editing tutorials that actually help people improve their skills. It's all about turning raw ideas into something worth sharing, with a bit of personality sprinkled in.
+                </p>
+                <p className="leading-relaxed text-lg">
+                  I also love sharing what I've learned along the way — whether it's video editing tricks, social media tips, or just random kitchen hacks. There's nothing like helping someone unlock their own creativity and get excited about what they can create.
+                </p>
+                <p className="leading-relaxed text-lg">
+                  I keep things real. No fake "aesthetic" here — just passion, curiosity, and a dash of chaos. If you're into fresh perspectives, new challenges, and creativity with a real edge, you're in the right place.
+                </p>
+              </div>
             </div>
           </div>
         </div>
