@@ -1,18 +1,31 @@
+
 import React from 'react';
-import { Instagram } from 'lucide-react';
+import { Instagram, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
 const AboutSection = () => {
   return <section className="py-8 bg-gradient-to-b from-dark via-primary-dark to-dark">
       <div className="max-w-4xl mx-auto">
-        <div className="bg-primary-dark/80 backdrop-blur-lg rounded-lg p-8 shadow-xl border border-primary-DEFAULT/20 animate-fade-up">
+        <div className="bg-primary-dark/80 backdrop-blur-lg rounded-lg p-8 shadow-xl border border-primary-DEFAULT/20 animate-fade-up relative">
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="w-48 h-48 rounded-full overflow-hidden shadow-lg ring-4 ring-primary-DEFAULT/30">
               <img alt="Advithya Bhardwaj" className="w-full h-full object-cover hover:scale-110 transition-transform duration-300" src="/lovable-uploads/95941a6c-9cde-482d-937f-245ec128763e.jpg" />
             </div>
 
             <div className="flex-1 text-center md:text-left">
-              <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-6 gold-gradient">
-                About Me
-              </h1>
+              <div className="flex items-center justify-between mb-4">
+                <h1 className="font-playfair text-4xl md:text-5xl font-bold gold-gradient">
+                  About Me
+                </h1>
+                <Link 
+                  to="/about" 
+                  className="flex items-center gap-2 text-primary-DEFAULT hover:text-primary-light transition-colors tooltip"
+                  aria-label="View full about page"
+                >
+                  <ExternalLink className="w-5 h-5" />
+                  <span className="hidden md:inline">Full Profile</span>
+                </Link>
+              </div>
               <div className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed space-y-4">
                 <p>
                   I am Advithya Bhardwaj, 16 years old and I love to cook and create content. I want to explore the gates of all types of cuisine and share it with the whole world.
