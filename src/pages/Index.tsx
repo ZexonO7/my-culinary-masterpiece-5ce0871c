@@ -188,8 +188,8 @@ const Index = () => {
     },
     {
       id: 6,
-      title: "Roasted Smashed Potatoes",
-      description: "Crispy on the outside, fluffy on the inside, these garlic-herb roasted smashed potatoes are the perfect side dish for any meal.",
+      title: "Roasted Smashed Potato Salad",
+      description: "A delightful combination of crispy roasted smashed potatoes tossed with fresh herbs and a tangy vinaigrette, creating a perfect warm salad for any occasion.",
       image: "/placeholder.svg",
       ingredients: [
         "Baby potatoes or small Yukon Gold potatoes",
@@ -198,6 +198,10 @@ const Index = () => {
         "Garlic cloves, minced",
         "Sea salt and black pepper",
         "Fresh parsley for garnish",
+        "Dijon mustard",
+        "Red wine vinegar",
+        "Spring onions, finely chopped",
+        "Fresh dill, chopped",
         "Grated Parmesan cheese (optional)"
       ],
       instructions: [
@@ -207,7 +211,10 @@ const Index = () => {
         "Place potatoes on a baking sheet and gently smash each one with a fork",
         "Drizzle with olive oil and sprinkle with garlic, herbs, salt, and pepper",
         "Roast for 20-25 minutes until crispy and golden brown",
-        "Garnish with fresh parsley and Parmesan if desired"
+        "While potatoes are roasting, whisk together olive oil, red wine vinegar, and Dijon mustard for the dressing",
+        "In a large bowl, combine roasted potatoes with dressing, spring onions, and fresh dill",
+        "Toss gently to combine, being careful not to break the potatoes completely",
+        "Garnish with fresh parsley and Parmesan if desired, serve warm"
       ],
       cookingTime: "1h",
       difficulty: "Easy",
