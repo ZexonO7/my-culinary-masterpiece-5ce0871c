@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
@@ -190,7 +189,7 @@ const Index = () => {
       id: 6,
       title: "Roasted Smashed Potato Salad",
       description: "A delightful combination of crispy roasted smashed potatoes tossed with fresh herbs and a tangy vinaigrette, creating a perfect warm salad for any occasion.",
-      image: "/placeholder.svg",
+      image: "/lovable-uploads/d83c39ce-bfc7-4e91-9714-cbb2c2e8c22a.png",
       ingredients: [
         "Baby potatoes or small Yukon Gold potatoes",
         "Extra virgin olive oil",
@@ -219,8 +218,7 @@ const Index = () => {
       cookingTime: "1h",
       difficulty: "Easy",
       cuisine: "American",
-      category: ["vegetarian"],
-      locked: true
+      category: ["vegetarian"]
     }
   ];
 
