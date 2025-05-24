@@ -1,8 +1,6 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Instagram, Clock, Award, Utensils } from 'lucide-react';
-
 const AboutMe = () => {
   return <div className="min-h-screen py-16 px-4 bg-gradient-to-b from-dark via-primary-dark to-dark">
       <div className="max-w-4xl mx-auto">
@@ -19,7 +17,7 @@ const AboutMe = () => {
           <div className="flex flex-col gap-8">
             <div className="flex flex-col md:flex-row gap-8 items-center">
               <div className="w-48 h-48 rounded-full overflow-hidden shadow-lg ring-4 ring-primary-DEFAULT/30">
-                <img src="/lovable-uploads/95941a6c-9cde-482d-937f-245ec128763e.jpg" alt="Advithya Bhardwaj" className="w-full h-full object-cover hover:scale-110 transition-transform duration-300" />
+                <img alt="Advithya Bhardwaj" className="w-full h-full object-cover hover:scale-110 transition-transform duration-300" src="/lovable-uploads/70929e7a-ca87-427d-b0a4-08f6fc9e55c0.jpg" />
               </div>
 
               <div className="flex-1 text-center md:text-left">
@@ -90,5 +88,4 @@ const AboutMe = () => {
       </div>
     </div>;
 };
-
 export default AboutMe;
