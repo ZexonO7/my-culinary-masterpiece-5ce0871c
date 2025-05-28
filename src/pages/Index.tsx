@@ -191,17 +191,17 @@ const Index = () => {
       description: "A delightful combination of crispy roasted smashed potatoes tossed with fresh herbs and a tangy vinaigrette, creating a perfect warm salad for any occasion.",
       image: "/lovable-uploads/d83c39ce-bfc7-4e91-9714-cbb2c2e8c22a.png",
       ingredients: [
-        "Baby potatoes or small Yukon Gold potatoes",
-        "Extra virgin olive oil",
-        "Fresh rosemary and thyme",
-        "Garlic cloves, minced",
-        "Sea salt and black pepper",
-        "Fresh parsley for garnish",
-        "Dijon mustard",
-        "Red wine vinegar",
-        "Spring onions, finely chopped",
-        "Fresh dill, chopped",
-        "Grated Parmesan cheese (optional)"
+        "Yukon Gold potatoes",
+        "Balsamic/White Vinegar",
+        "Neutral Oil",
+        "Salt and black pepper",
+        "Greek yogurt",
+        "Dijon Mustard",
+        "Dill",
+        "Spring onions",
+        "Garlic",
+        "Mayonnaise",
+        "Pepper"
       ],
       instructions: [
         "Boil potatoes in salted water until fork-tender (about 20-25 minutes)",
