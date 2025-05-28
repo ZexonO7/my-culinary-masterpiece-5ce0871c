@@ -207,16 +207,17 @@ const Index = () => {
         "Pepper"
       ],
       instructions: [
-        "Boil potatoes in salted water until fork-tender (about 20-25 minutes)",
-        "Drain potatoes and let them cool slightly",
+        "Boil Yukon Gold potatoes in salted water until fork-tender (about 20-25 minutes)",
+        "Drain potatoes and let them cool slightly, then place on a baking sheet",
         "Preheat oven to 425°F (220°C)",
-        "Place potatoes on a baking sheet and gently smash each one with a fork",
-        "Drizzle with olive oil and sprinkle with garlic, herbs, salt, and pepper",
+        "Gently smash each potato with a fork, drizzle with neutral oil and season with salt and pepper",
         "Roast for 20-25 minutes until crispy and golden brown",
-        "While potatoes are roasting, whisk together olive oil, red wine vinegar, and Dijon mustard for the dressing",
-        "In a large bowl, combine roasted potatoes with dressing, spring onions, and fresh dill",
-        "Toss gently to combine, being careful not to break the potatoes completely",
-        "Garnish with fresh parsley and Parmesan if desired, serve warm"
+        "While potatoes roast, prepare the dressing by whisking together Greek yogurt, mayonnaise, and Dijon mustard",
+        "Add balsamic vinegar, minced garlic, and chopped dill to the dressing mixture",
+        "Season the dressing with salt and pepper to taste",
+        "In a large bowl, combine the roasted smashed potatoes with chopped onions and spring onions",
+        "Add the prepared dressing and toss gently to combine",
+        "Garnish with fresh chopped coriander and additional dill before serving warm"
       ],
       cookingTime: "1h",
       difficulty: "Easy",
