@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Recipe } from '../types/Recipe';
@@ -278,7 +277,7 @@ const RecipeDetail = () => {
         <div className="grid md:grid-cols-2 gap-12">
           <div>
             <RecipeImage recipe={recipe} />
-            <RecipeCookingInfo cookingTips={cookingTips} />
+            <RecipeCookingInfo cookingTips={cookingTips} recipeId={recipe.id} />
           </div>
           
           <div className="space-y-8">
