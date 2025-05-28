@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
@@ -200,6 +201,7 @@ const Index = () => {
         "Dill",
         "Spring onions",
         "Chopped onions",
+        "Chopped coriander",
         "Garlic",
         "Mayonnaise",
         "Pepper"

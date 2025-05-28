@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Recipe } from '../types/Recipe';
@@ -203,6 +204,7 @@ const RecipeDetail = () => {
         "Dill",
         "Spring onions",
         "Chopped onions",
+        "Chopped coriander",
         "Garlic",
         "Mayonnaise",
         "Pepper"
