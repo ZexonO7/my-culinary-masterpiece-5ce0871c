@@ -199,6 +199,7 @@ const Index = () => {
         "Dijon Mustard",
         "Dill",
         "Spring onions",
+        "Chopped onions",
         "Garlic",
         "Mayonnaise",
         "Pepper"
