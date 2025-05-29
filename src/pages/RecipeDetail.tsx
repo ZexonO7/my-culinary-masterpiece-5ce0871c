@@ -230,7 +230,7 @@ const RecipeDetail = () => {
       id: 7,
       title: "Honey Carrot Candy",
       description: "A traditional French confection featuring tender carrots glazed in rich honey and butter, creating an elegant sweet treat with a beautiful golden color.",
-      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80",
+      image: "/lovable-uploads/64da4a80-6224-4733-bca4-5e8eda227df8.png",
       ingredients: [
         "Young tender carrots",
         "Pure wildflower honey",
