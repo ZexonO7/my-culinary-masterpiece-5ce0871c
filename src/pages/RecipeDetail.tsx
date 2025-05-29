@@ -225,6 +225,41 @@ const RecipeDetail = () => {
       difficulty: "Easy",
       cuisine: "American",
       category: ["vegetarian"]
+    },
+    {
+      id: 7,
+      title: "Honey Carrot Candy",
+      description: "A traditional French confection featuring tender carrots glazed in rich honey and butter, creating an elegant sweet treat with a beautiful golden color.",
+      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80",
+      ingredients: [
+        "Young tender carrots",
+        "Pure wildflower honey",
+        "French butter",
+        "Sea salt",
+        "Fresh thyme",
+        "Orange zest",
+        "Vanilla extract",
+        "Powdered sugar for dusting",
+        "Chopped pistachios (optional)",
+        "Edible flowers for garnish"
+      ],
+      instructions: [
+        "Peel and cut young carrots into uniform 2-inch pieces",
+        "Blanch carrots in salted boiling water for 3-4 minutes until slightly tender",
+        "In a heavy-bottomed saucepan, melt butter over medium heat",
+        "Add honey and stir until well combined with the butter",
+        "Add blanched carrots to the honey-butter mixture",
+        "Cook on low heat for 15-20 minutes, stirring gently to coat carrots",
+        "Add fresh thyme leaves, orange zest, and a pinch of sea salt",
+        "Continue cooking until carrots are glazed and honey has thickened",
+        "Remove from heat and add vanilla extract",
+        "Let cool slightly, then dust with powdered sugar",
+        "Garnish with chopped pistachios and edible flowers before serving"
+      ],
+      cookingTime: "35m",
+      difficulty: "Medium",
+      cuisine: "French",
+      category: ["desserts"]
     }
   ];
 
@@ -236,6 +271,12 @@ const RecipeDetail = () => {
       "Keep heat at medium-high for best results",
       "Adjust the seasoning and spicy garlic sauce as per your taste"
     ] : 
+    id === '7' ?
+    [
+      "Use young, tender carrots for the best texture",
+      "Keep heat low to prevent honey from burning",
+      "Test doneness with a fork - carrots should be tender but not mushy"
+    ] :
     [
       "Prep all ingredients before starting",
       "If the tomato's are too sour add a pinch of baking soda to neutralize the acid",

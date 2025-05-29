@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ChefHat, Clock, Flame } from 'lucide-react';
 
@@ -17,6 +16,12 @@ const RecipeCookingInfo: React.FC<RecipeCookingInfoProps> = ({
       return {
         prepTime: "20 mins",
         cookTime: "40 mins"
+      };
+    }
+    if (id === 7) { // Honey Carrot Candy
+      return {
+        prepTime: "10 mins",
+        cookTime: "25 mins"
       };
     }
     // Default times for other recipes

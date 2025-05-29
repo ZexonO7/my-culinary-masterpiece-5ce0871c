@@ -8,7 +8,7 @@ export interface Recipe {
   instructions: string[];
   cookingTime: string;
   difficulty: "Easy" | "Medium" | "Hard";
-  cuisine: "Indian" | "Italian" | "American";
+  cuisine: "Indian" | "Italian" | "American" | "French";
   category: ("all" | "vegan" | "vegetarian" | "desserts" | "non-veg")[];
   locked?: boolean;
 }
