@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { AlertTriangle } from 'lucide-react';
 import { detectAllergens, getAllergenDisplayName } from '../utils/allergenDetection';
 
 interface AllergyDisclaimerProps {
@@ -14,7 +13,6 @@ const AllergyDisclaimer: React.FC<AllergyDisclaimerProps> = ({ ingredients }) =>
   if (detectedAllergens.length === 0) {
     return (
       <Alert className="bg-green-50 border-green-200 dark:bg-green-950 dark:border-green-800">
-        <AlertTriangle className="h-4 w-4 text-green-600 dark:text-green-400" />
         <AlertTitle className="text-green-800 dark:text-green-200">Allergy Information</AlertTitle>
         <AlertDescription className="text-green-700 dark:text-green-300">
           No common allergens detected in this recipe. However, please always check individual ingredients and cross-contamination risks.
@@ -25,8 +23,7 @@ const AllergyDisclaimer: React.FC<AllergyDisclaimerProps> = ({ ingredients }) =>
 
   return (
     <Alert className="bg-orange-50 border-orange-200 dark:bg-orange-950 dark:border-orange-800">
-      <AlertTriangle className="h-4 w-4 text-orange-600 dark:text-orange-400" />
-      <AlertTitle className="text-orange-800 dark:text-orange-200">Allergy Warning</AlertTitle>
+      <AlertTitle className="text-orange-800 dark:text-orange-200">Allergy Information</AlertTitle>
       <AlertDescription className="text-orange-700 dark:text-orange-300">
         <p className="mb-2">This recipe contains the following potential allergens:</p>
         <div className="flex flex-wrap gap-2 mb-2">

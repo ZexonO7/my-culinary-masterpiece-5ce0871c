@@ -7,6 +7,7 @@ import RecipeInstructions from '../components/RecipeInstructions';
 import RecipeHeader from '../components/recipe/RecipeHeader';
 import RecipeImage from '../components/recipe/RecipeImage';
 import RecipeCookingInfo from '../components/recipe/RecipeCookingInfo';
+import AllergyDisclaimer from '../components/AllergyDisclaimer';
 
 const RecipeDetail = () => {
   const { id } = useParams();
@@ -338,6 +339,10 @@ const RecipeDetail = () => {
             
             <div className="space-y-6 fade-in" style={{ animationDelay: '0.5s' }}>
               <RecipeInstructions instructions={recipe.instructions} />
+            </div>
+
+            <div className="space-y-6 fade-in" style={{ animationDelay: '0.6s' }}>
+              <AllergyDisclaimer ingredients={recipe.ingredients} />
             </div>
           </div>
         </div>
