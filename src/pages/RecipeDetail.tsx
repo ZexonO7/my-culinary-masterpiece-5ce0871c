@@ -73,7 +73,6 @@ const RecipeDetail = () => {
         "Ginger garlic paste",
         "Cream",
         "Spicy garlic sauce",
-        "Good quality Pasta (Penne)",
         "Parmigiano-Reggiano (optional)"
       ],
       instructions: [
@@ -206,7 +205,6 @@ const RecipeDetail = () => {
         "Chopped onions",
         "Chopped coriander",
         "Garlic",
-        "Mayonnaise",
         "Pepper"
       ],
       instructions: [

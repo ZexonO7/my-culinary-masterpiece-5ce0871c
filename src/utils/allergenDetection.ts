@@ -8,7 +8,8 @@ const ALLERGEN_KEYWORDS = {
   soy: ['soy', 'tofu', 'soybean', 'soy sauce'],
   sesame: ['sesame', 'tahini'],
   shellfish: ['shrimp', 'crab', 'lobster', 'prawns'],
-  fish: ['fish', 'salmon', 'tuna', 'cod', 'anchovy']
+  fish: ['fish', 'salmon', 'tuna', 'cod', 'anchovy'],
+  mushroom: ['mushroom', 'mushrooms', 'button mushrooms', 'shiitake', 'portobello', 'cremini']
 };
 
 export const detectAllergens = (ingredients: string[]): string[] => {
@@ -36,7 +37,8 @@ export const getAllergenDisplayName = (allergen: string): string => {
     soy: 'Soy',
     sesame: 'Sesame',
     shellfish: 'Shellfish',
-    fish: 'Fish'
+    fish: 'Fish',
+    mushroom: 'Mushroom'
   };
   
   return displayNames[allergen] || allergen;
