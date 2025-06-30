@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Instagram, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -21,7 +22,7 @@ const AboutSection = () => {
                 </Link>
               </div>
               <div className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed space-y-4">
-                <p>I am Advithya Bhardwaj, 16 years old, and I love to cook and create content. I want to explore the gates of all types of cuisine and share it with the whole world. That’s one of the reasons why I founded & Built ChefsCircle.</p>
+                <p>I am Advithya Bhardwaj, 16 years old, and I love to cook and create content. I want to explore the gates of all types of cuisine and share it with the whole world. That's one of the reasons why I founded & Built <a href="https://Chefscircle.in" target="_blank" rel="noopener noreferrer" className="text-primary-DEFAULT hover:text-primary-light underline transition-colors">ChefsCircle</a>.</p>
                 <p>
                   My culinary journey began in my family's kitchen, where I discovered my passion for cooking when I was 12. I'm particularly fascinated by the fusion of traditional Indian flavors with modern cooking techniques, and I love experimenting with all type of cuisine.
                 </p>
