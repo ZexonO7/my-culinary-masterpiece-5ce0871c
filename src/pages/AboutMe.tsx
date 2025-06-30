@@ -69,17 +69,19 @@ const AboutMe = () => {
               <h2 className="font-playfair text-3xl font-bold mb-6 gold-gradient text-center md:text-left">My Creative Journey</h2>
               <div className="bg-primary-dark/30 p-8 rounded-lg border border-primary-DEFAULT/10 space-y-6">
                 <p className="leading-relaxed text-lg">
-                  Hey, I'm Advithya Bhardwaj.
-                  I'm a content creator, chef in the making, and a tech geek who's always looking for the next big idea. My days revolve around mixing creativity with practicality — whether I'm in the kitchen cooking up new dishes, behind the camera editing videos, or figuring out how to make tech work for my next big project.
+                  Hi, I'm Advithya Bhardwaj – a student, creator, and someone who's deeply passionate about food, technology, and building things that matter.
                 </p>
                 <p className="leading-relaxed text-lg">
-                  I've been diving deep into content creation for a while, experimenting with everything from food videos that make you hungry to editing tutorials that actually help people improve their skills. It's all about turning raw ideas into something worth sharing, with a bit of personality sprinkled in.
+                  Right now, I'm in Class 12 studying Commerce, but beyond academics, I spend most of my time exploring the culinary world. I love cooking and creating recipes that are simple yet bold. I'm also working on my startup, ChefsCircle, which aims to make cooking fun, interactive, and accessible for everyone through AI and gamified learning.
                 </p>
                 <p className="leading-relaxed text-lg">
-                  I also love sharing what I've learned along the way — whether it's video editing tricks, social media tips, or just random kitchen hacks. There's nothing like helping someone unlock their own creativity and get excited about what they can create.
+                  Apart from food, I enjoy learning about AI, entrepreneurship, and ways technology can drive social impact. I believe that small ideas can turn into big changes when you work on them consistently and with purpose.
                 </p>
                 <p className="leading-relaxed text-lg">
-                  I keep things real. No fake "aesthetic" here — just passion, curiosity, and a dash of chaos. If you're into fresh perspectives, new challenges, and creativity with a real edge, you're in the right place.
+                  When I'm not studying or building projects, you'll find me experimenting with new dishes in the kitchen, writing journal entries to reflect, or planning my next creative move. I value honesty, curiosity, and making people feel welcomed through what I create.
+                </p>
+                <p className="leading-relaxed text-lg">
+                  If there's one thing I truly believe in, it's that we're all capable of more than we think – as long as we stay hungry to learn and grow.
                 </p>
               </div>
             </div>
