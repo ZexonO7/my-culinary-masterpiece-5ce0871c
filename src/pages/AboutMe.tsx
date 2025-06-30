@@ -80,9 +80,9 @@ const AboutMe = () => {
                 <p className="leading-relaxed text-lg">
                   When I'm not studying or building projects, you'll find me experimenting with new dishes in the kitchen, writing journal entries to reflect, or planning my next creative move. I value honesty, curiosity, and making people feel welcomed through what I create.
                 </p>
-                <p className="leading-relaxed text-lg">
-                  If there's one thing I truly believe in, it's that we're all capable of more than we think – as long as we stay hungry to learn and grow.
-                </p>
+                <p className="leading-relaxed text-lg">If there's one thing I truly believe in, it's that we're all capable of more than we think – as long as we stay hungry to learn and grow.
+
+I keep things real. No fake "aesthetic" here — just passion, curiosity, and a dash of chaos. If you're into fresh perspectives, new challenges, and creativity with a real edge, you're in the right place.</p>
               </div>
             </div>
           </div>
