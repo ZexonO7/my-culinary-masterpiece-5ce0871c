@@ -61,7 +61,7 @@ const AboutMe = () => {
                   <Award className="text-primary-DEFAULT w-6 h-6" />
                   <h3 className="text-xl font-semibold">My Mission</h3>
                 </div>
-                <p className="text-gray-300">My goal is to share my love for cooking and become one of the best Chefs in the World, I'm also an Aspiring Restauranteur and Content Creator.  </p>
+                <p className="text-gray-300">My goal is to share my love for cooking and become one of the best Chefs in the World, I'm also an Aspiring Restauranteur and Content Creator with a fresh StartUp Called ChefsCircle.</p>
               </div>
             </div>
             
