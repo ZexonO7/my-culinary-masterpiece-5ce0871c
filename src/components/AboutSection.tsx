@@ -8,7 +8,7 @@ const AboutSection = () => {
         <div className="bg-primary-dark/80 backdrop-blur-lg rounded-lg p-8 shadow-xl border border-primary-DEFAULT/20 animate-fade-up relative">
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="w-48 h-48 rounded-full overflow-hidden shadow-lg ring-4 ring-primary-DEFAULT/30">
-              <img alt="Advithya Bhardwaj" className="w-full h-full object-cover hover:scale-110 transition-transform duration-300" src="/lovable-uploads/47f09b97-909a-4353-adb3-0df48d0e0ff2.png" />
+              <img alt="Advithya Bhardwaj" className="w-full h-full object-cover object-center scale-110 hover:scale-125 transition-transform duration-300" src="/lovable-uploads/47f09b97-909a-4353-adb3-0df48d0e0ff2.png" />
             </div>
 
             <div className="flex-1 text-center md:text-left">
