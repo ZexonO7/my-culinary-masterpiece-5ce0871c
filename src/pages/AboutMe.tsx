@@ -1,8 +1,11 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Instagram, Clock, Award, Utensils } from 'lucide-react';
+
 const AboutMe = () => {
-  return <div className="min-h-screen py-16 px-4 bg-gradient-to-b from-dark via-primary-dark to-dark">
+  return (
+    <div className="min-h-screen py-16 px-4 bg-gradient-to-b from-dark via-primary-dark to-dark">
       <div className="max-w-4xl mx-auto">
         <nav className="flex justify-between items-center mb-12">
           <Link to="/" className="text-primary-DEFAULT hover:text-primary-light transition-colors">
@@ -17,7 +20,11 @@ const AboutMe = () => {
           <div className="flex flex-col gap-8">
             <div className="flex flex-col md:flex-row gap-8 items-center">
               <div className="w-48 h-48 rounded-full overflow-hidden shadow-lg ring-4 ring-primary-DEFAULT/30">
-                <img alt="Advithya Bhardwaj" className="w-full h-full object-cover hover:scale-110 transition-transform duration-300" src="/lovable-uploads/70929e7a-ca87-427d-b0a4-08f6fc9e55c0.jpg" />
+                <img 
+                  alt="Advithya Bhardwaj" 
+                  className="w-full h-full object-cover object-center scale-110 hover:scale-125 transition-transform duration-300" 
+                  src="/lovable-uploads/47f09b97-909a-4353-adb3-0df48d0e0ff2.png" 
+                />
               </div>
 
               <div className="flex-1 text-center md:text-left">
@@ -87,6 +94,8 @@ I keep things real. No fake "aesthetic" here — just passion, curiosity, and a 
           </div>
         </div>
       </div>
-    </div>;
+    </div>
+  );
 };
+
 export default AboutMe;
