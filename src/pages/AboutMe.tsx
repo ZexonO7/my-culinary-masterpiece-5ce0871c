@@ -24,9 +24,8 @@ const AboutMe = () => {
                 <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-6 gold-gradient">
                   About Me
                 </h1>
-                <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-                  I am Advithya Bhardwaj, 16 years old and I love to cook and create content. I want to explore the gates of all types of cuisine and share it with the whole world.
-                </p>
+                <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">I am Advithya Bhardwaj, 16 years old and I love to cook and create content. I want to explore the gates of all types of cuisine and share it with the whole world.
+Founder & CEO of ChefsCircle.</p>
                 
                 <a href="https://www.instagram.com/the.cooking.journey/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full hover:opacity-90 transition-all hover:scale-105 duration-300">
                   <Instagram className="w-5 h-5" />
