@@ -1,69 +1,61 @@
-# Welcome to your Lovable project
+# 🍳 My Culinary Journey
 
-## Project info
+Welcome to my kitchen’s digital home!  
+This project is a **living archive** of my recipes, experiments, and creative adventures as I work toward my dream of becoming a chef.  
 
-**URL**: https://lovable.dev/projects/fee6c5a3-c015-46ad-b8d0-eaf31e3d81b0
+It’s not just about cooking food — it’s about learning techniques, exploring flavors, and finding my unique culinary voice.  
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 📖 About This Project
 
-**Use Lovable**
+I’ve always believed that cooking is both an **art** and a **science**.  
+This repository serves as:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/fee6c5a3-c015-46ad-b8d0-eaf31e3d81b0) and start prompting.
+- 📜 **Recipe Library** – My original creations and adapted classics.
+- 🔬 **Experiment Log** – Trial-and-error notes, flavor pairings, plating tests.
+- 🥢 **Skill Tracker** – Techniques I’ve learned (and am still perfecting).
+- 🎨 **Creative Playground** – Special challenges, pop-up ideas, plating concepts.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🍽 Contents
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. **Recipes**
+   - Global cuisines, comfort food, and bold flavor experiments.
+2. **Experiments**
+   - Notes on texture, balance, and innovation.
+3. **Skills**
+   - Knife work, sauces, baking, modern plating.
+4. **Projects**
+   - Themed dinners, mini pop-ups, food styling trials.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🛠 Tools & Techniques
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Traditional**: Knife skills, roasting, baking, slow cooking.
+- **Modern**: Plating artistry, flavor layering, molecular gastronomy experiments.
+- **Tech**: Recipe management tools, photography setup for food styling.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🎯 My Vision
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+This journey is part of my bigger dream — to **become a chef**, open my own restaurant,  
+and create dishes that tell stories.
 
-**Edit a file directly in GitHub**
+Every commit here is a step toward that goal.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 📬 Feedback & Collaboration
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+If you share my passion for food, creativity, and culinary innovation, let’s connect!  
+Whether you’re a home cook, fellow chef, or food enthusiast — I’d love to exchange ideas.  
 
-## What technologies are used for this project?
+📧 **Contact:** Advithya07@gmail.com 
 
-This project is built with .
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/fee6c5a3-c015-46ad-b8d0-eaf31e3d81b0) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+> _“Cooking is not just about feeding the body, it’s about feeding the soul.”_
