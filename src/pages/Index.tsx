@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
-import PhotoGallery from '../components/PhotoGallery';
 import RecipeFilters, { FilterType } from '../components/RecipeFilters';
 import RecipeGrid from '../components/RecipeGrid';
 import { Recipe } from '../types/Recipe';
@@ -265,7 +264,6 @@ const Index = () => {
     <div className="min-h-screen relative">
       <HeroSection />
       <AboutSection />
-      <PhotoGallery />
       
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-5xl font-playfair font-bold text-center mb-8">
