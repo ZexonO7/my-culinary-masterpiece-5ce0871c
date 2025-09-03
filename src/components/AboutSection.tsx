@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Instagram, ExternalLink } from 'lucide-react';
+import { Instagram, ExternalLink, Camera } from 'lucide-react';
 import { Link } from 'react-router-dom';
 const AboutSection = () => {
   return <section className="py-8 bg-gradient-to-b from-dark via-primary-dark to-dark">
@@ -16,10 +16,16 @@ const AboutSection = () => {
                 <h1 className="font-playfair text-4xl md:text-5xl font-bold gold-gradient">
                   About Me
                 </h1>
-                <Link to="/about" className="flex items-center gap-2 text-primary-DEFAULT hover:text-primary-light transition-colors tooltip" aria-label="View full about page">
-                  <ExternalLink className="w-5 h-5" />
-                  <span className="hidden md:inline">Full Profile</span>
-                </Link>
+                <div className="flex items-center gap-4">
+                  <Link to="/photos" className="flex items-center gap-2 text-primary-DEFAULT hover:text-primary-light transition-colors tooltip" aria-label="View photos">
+                    <Camera className="w-5 h-5" />
+                    <span className="hidden md:inline">Photos</span>
+                  </Link>
+                  <Link to="/about" className="flex items-center gap-2 text-primary-DEFAULT hover:text-primary-light transition-colors tooltip" aria-label="View full about page">
+                    <ExternalLink className="w-5 h-5" />
+                    <span className="hidden md:inline">Full Profile</span>
+                  </Link>
+                </div>
               </div>
               <div className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed space-y-4">
                 <p>Advithya Bhardwaj, 16 years old, love's to cook and create content. Founder & CEO of <a href="https://Chefscircle.in" target="_blank" rel="noopener noreferrer" className="text-primary-DEFAULT hover:text-primary-light underline transition-colors">ChefsCircle</a>, Also a Aspiring Chef & Restaurateur who wants to explore the gates of all types of cuisine and share it with the whole world.</p>
