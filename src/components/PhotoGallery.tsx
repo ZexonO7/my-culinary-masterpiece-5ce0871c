@@ -2,12 +2,6 @@ import React from 'react';
 
 const PhotoGallery: React.FC = () => {
   const foodPhotos = [
-    '/lovable-uploads/13f67694-e059-4b0b-88f2-910746049939.png',
-    '/lovable-uploads/1f25c7b1-bb04-4bfa-bf50-cba9067427b3.jpg',
-    '/lovable-uploads/3d41ae60-1aec-466b-980d-16e5f2e55e45.png',
-    '/lovable-uploads/464a71d5-7ff4-47cf-a059-752661623ae2.png',
-    '/lovable-uploads/47f09b97-909a-4353-adb3-0df48d0e0ff2.png',
-    '/lovable-uploads/5c5abd11-0cf0-49dd-80fa-7def2ffdecc3.jpg',
     '/lovable-uploads/64da4a80-6224-4733-bca4-5e8eda227df8.png',
     '/lovable-uploads/6a5c80a4-808b-4681-9f22-7daadd81a361.png',
     '/lovable-uploads/70929e7a-ca87-427d-b0a4-08f6fc9e55c0.jpg',
