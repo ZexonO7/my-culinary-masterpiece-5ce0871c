@@ -16,17 +16,16 @@ const AboutSection = () => {
                 <h1 className="font-playfair text-4xl md:text-5xl font-bold gold-gradient">
                   About Me
                 </h1>
-                <Link to="/about" className="flex items-center gap-2 text-primary-DEFAULT hover:text-primary-light transition-colors tooltip" aria-label="View full about page">
-                  <ExternalLink className="w-5 h-5" />
-                  <span className="hidden md:inline">Full Profile</span>
-                </Link>
-              </div>
-              
-              <div className="mb-6">
-                <Link to="/photos" className="inline-flex items-center gap-3 bg-primary-DEFAULT/20 hover:bg-primary-DEFAULT/30 text-primary-DEFAULT hover:text-primary-light px-6 py-3 rounded-full transition-all hover:scale-105 duration-300 border border-primary-DEFAULT/30">
-                  <Camera className="w-6 h-6" />
-                  <span className="font-medium">View My Food Photography</span>
-                </Link>
+                <div className="flex items-center gap-4">
+                  <Link to="/photos" className="flex items-center gap-2 text-primary-DEFAULT hover:text-primary-light transition-colors tooltip" aria-label="View photos">
+                    <Camera className="w-5 h-5" />
+                    <span className="hidden md:inline">Photos</span>
+                  </Link>
+                  <Link to="/about" className="flex items-center gap-2 text-primary-DEFAULT hover:text-primary-light transition-colors tooltip" aria-label="View full about page">
+                    <ExternalLink className="w-5 h-5" />
+                    <span className="hidden md:inline">Full Profile</span>
+                  </Link>
+                </div>
               </div>
               <div className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed space-y-4">
                 <p>Advithya Bhardwaj, 16 years old, love's to cook and create content. Founder & CEO of <a href="https://Chefscircle.in" target="_blank" rel="noopener noreferrer" className="text-primary-DEFAULT hover:text-primary-light underline transition-colors">ChefsCircle</a>, Also a Aspiring Chef & Restaurateur who wants to explore the gates of all types of cuisine and share it with the whole world.</p>
