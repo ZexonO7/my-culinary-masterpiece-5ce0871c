@@ -2,7 +2,6 @@ import React from 'react';
 
 const PhotoGallery: React.FC = () => {
   const foodPhotos = [
-    '/lovable-uploads/13f67694-e059-4b0b-88f2-910746049939.png',
     '/lovable-uploads/1f25c7b1-bb04-4bfa-bf50-cba9067427b3.jpg',
     '/lovable-uploads/3d41ae60-1aec-466b-980d-16e5f2e55e45.png',
     '/lovable-uploads/464a71d5-7ff4-47cf-a059-752661623ae2.png',
