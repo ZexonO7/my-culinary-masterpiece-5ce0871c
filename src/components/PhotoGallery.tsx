@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Dialog, DialogContent } from '@/components/ui/dialog';
 
 const PhotoGallery: React.FC = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const foodPhotos = [
     '/lovable-uploads/464a71d5-7ff4-47cf-a059-752661623ae2.png',
     '/lovable-uploads/47f09b97-909a-4353-adb3-0df48d0e0ff2.png',
@@ -36,8 +38,9 @@ const PhotoGallery: React.FC = () => {
           {foodPhotos.map((photo, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-lg aspect-square bg-muted animate-[fadeInUp_0.6s_ease-out] hover:scale-105 transition-transform duration-300"
+              className="group relative overflow-hidden rounded-lg aspect-square bg-muted animate-[fadeInUp_0.6s_ease-out] hover:scale-105 transition-transform duration-300 cursor-pointer"
               style={{ animationDelay: `${index * 0.1}s` }}
+              onClick={() => setSelectedImage(photo)}
             >
               <img
                 src={photo}
@@ -45,10 +48,21 @@ const PhotoGallery: React.FC = () => {
                 className="w-full h-full object-cover group-hover:brightness-110 transition-all duration-300"
                 loading="lazy"
               />
-              
             </div>
           ))}
         </div>
+        
+        <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
+          <DialogContent className="max-w-4xl max-h-[90vh] p-0 bg-transparent border-none">
+            {selectedImage && (
+              <img
+                src={selectedImage}
+                alt="Full size food photography"
+                className="w-full h-full object-contain rounded-lg"
+              />
+            )}
+          </DialogContent>
+        </Dialog>
       </div>
     </section>
   );
