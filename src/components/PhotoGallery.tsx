@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 
 const PhotoGallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -62,6 +62,8 @@ const PhotoGallery: React.FC = () => {
         
         <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
           <DialogContent className="max-w-4xl max-h-[90vh] p-0 bg-transparent border-none overflow-hidden">
+            <DialogTitle className="sr-only">Image viewer</DialogTitle>
+            <DialogDescription className="sr-only">Drag to pan, scroll to zoom</DialogDescription>
             {selectedImage && (
               <div 
                 className="w-full h-full flex items-center justify-center cursor-grab active:cursor-grabbing"
@@ -90,7 +92,7 @@ const PhotoGallery: React.FC = () => {
                   alt="Full size food photography"
                   className="max-w-full max-h-full object-contain rounded-lg select-none"
                   style={{
-                    transform: `scale(${zoom}) translate(${pan.x / zoom}px, ${pan.y / zoom}px)`,
+                    transform: `scale(${zoom}) translate(${pan.x}px, ${pan.y}px)`,
                     transition: isDragging ? 'none' : 'transform 0.1s ease-out'
                   }}
                   draggable={false}
