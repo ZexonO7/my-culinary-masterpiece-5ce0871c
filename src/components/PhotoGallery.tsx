@@ -3,6 +3,10 @@ import { Dialog, DialogContent } from '@/components/ui/dialog';
 
 const PhotoGallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [zoom, setZoom] = useState(1);
+  const [pan, setPan] = useState({ x: 0, y: 0 });
+  const [isDragging, setIsDragging] = useState(false);
+  const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
   const foodPhotos = [
     '/lovable-uploads/464a71d5-7ff4-47cf-a059-752661623ae2.png',
     '/lovable-uploads/47f09b97-909a-4353-adb3-0df48d0e0ff2.png',
@@ -40,7 +44,11 @@ const PhotoGallery: React.FC = () => {
               key={index}
               className="group relative overflow-hidden rounded-lg aspect-square bg-muted animate-[fadeInUp_0.6s_ease-out] hover:scale-105 transition-transform duration-300 cursor-pointer"
               style={{ animationDelay: `${index * 0.1}s` }}
-              onClick={() => setSelectedImage(photo)}
+              onClick={() => {
+                setSelectedImage(photo);
+                setZoom(1);
+                setPan({ x: 0, y: 0 });
+              }}
             >
               <img
                 src={photo}
@@ -53,13 +61,41 @@ const PhotoGallery: React.FC = () => {
         </div>
         
         <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
-          <DialogContent className="max-w-4xl max-h-[90vh] p-0 bg-transparent border-none">
+          <DialogContent className="max-w-4xl max-h-[90vh] p-0 bg-transparent border-none overflow-hidden">
             {selectedImage && (
-              <img
-                src={selectedImage}
-                alt="Full size food photography"
-                className="w-full h-full object-contain rounded-lg"
-              />
+              <div 
+                className="w-full h-full flex items-center justify-center cursor-grab active:cursor-grabbing"
+                onWheel={(e) => {
+                  e.preventDefault();
+                  const delta = e.deltaY > 0 ? 0.9 : 1.1;
+                  setZoom(prev => Math.max(0.5, Math.min(5, prev * delta)));
+                }}
+                onMouseDown={(e) => {
+                  setIsDragging(true);
+                  setDragStart({ x: e.clientX - pan.x, y: e.clientY - pan.y });
+                }}
+                onMouseMove={(e) => {
+                  if (isDragging) {
+                    setPan({
+                      x: e.clientX - dragStart.x,
+                      y: e.clientY - dragStart.y
+                    });
+                  }
+                }}
+                onMouseUp={() => setIsDragging(false)}
+                onMouseLeave={() => setIsDragging(false)}
+              >
+                <img
+                  src={selectedImage}
+                  alt="Full size food photography"
+                  className="max-w-full max-h-full object-contain rounded-lg select-none"
+                  style={{
+                    transform: `scale(${zoom}) translate(${pan.x / zoom}px, ${pan.y / zoom}px)`,
+                    transition: isDragging ? 'none' : 'transform 0.1s ease-out'
+                  }}
+                  draggable={false}
+                />
+              </div>
             )}
           </DialogContent>
         </Dialog>
