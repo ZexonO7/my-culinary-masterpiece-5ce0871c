@@ -7,7 +7,17 @@ const PhotoGallery: React.FC = () => {
     '/lovable-uploads/64da4a80-6224-4733-bca4-5e8eda227df8.png',
     '/lovable-uploads/6a5c80a4-808b-4681-9f22-7daadd81a361.png',
     '/lovable-uploads/bea5f6f6-0e03-4e8c-9c74-b42f1d9c6dc0.png',
-    '/lovable-uploads/d83c39ce-bfc7-4e91-9714-cbb2c2e8c22a.png'
+    '/lovable-uploads/d83c39ce-bfc7-4e91-9714-cbb2c2e8c22a.png',
+    '/lovable-uploads/IMG_1747918252848.JPEG',
+    '/lovable-uploads/IMG_1754996256376.JPEG',
+    '/lovable-uploads/IMG_1754997061843.JPG',
+    '/lovable-uploads/IMG_1755608779483.JPEG',
+    '/lovable-uploads/IMG_1755608803276.JPEG',
+    '/lovable-uploads/IMG_1757177123808.JPEG',
+    '/lovable-uploads/IMG_1757177885247.JPEG',
+    '/lovable-uploads/IMG_1757764665950.JPEG',
+    '/lovable-uploads/IMG_1757764669545.JPEG',
+    '/lovable-uploads/IMG_1893.PNG'
   ];
 
   return (
