@@ -24,14 +24,13 @@ const PhotoGallery: React.FC = () => {
     '/lovable-uploads/IMG_1757764665950.JPEG',
     '/lovable-uploads/IMG_1757764669545.JPEG',
     '/lovable-uploads/IMG_1893.PNG',
-    '/lovable-uploads/IMG_0779.HEIC',
-    '/lovable-uploads/IMG_1854.HEIC',
-    '/lovable-uploads/IMG_1869.HEIC',
-    '/lovable-uploads/IMG_1892.HEIC',
-    '/lovable-uploads/IMG_1893-2.PNG',
-    '/lovable-uploads/IMG_2368.HEIC',
-    '/lovable-uploads/IMG_2371.HEIC',
-    '/lovable-uploads/IMG_9593.HEIC'
+    '/lovable-uploads/IMG_0779.JPG',
+    '/lovable-uploads/IMG_1854.JPG',
+    '/lovable-uploads/IMG_1869.JPG',
+    '/lovable-uploads/IMG_1892.JPG',
+    '/lovable-uploads/IMG_2368.JPG',
+    '/lovable-uploads/IMG_2371.JPG',
+    '/lovable-uploads/IMG_9593.JPG'
   ];
 
   return (
