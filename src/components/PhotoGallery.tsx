@@ -55,6 +55,7 @@ const PhotoGallery: React.FC = () => {
                 setSelectedImage(photo);
                 setZoom(1);
                 setPan({ x: 0, y: 0 });
+                setIsDragging(false);
               }}
             >
               <img
