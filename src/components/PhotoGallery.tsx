@@ -33,6 +33,21 @@ const PhotoGallery: React.FC = () => {
     '/lovable-uploads/IMG_9593.jpg'
   ];
 
+  const getSrcVariants = (src: string) => {
+    const dot = src.lastIndexOf('.');
+    const base = dot >= 0 ? src.slice(0, dot) : src;
+    const variants = [
+      `${base}.jpg`,
+      `${base}.JPG`,
+      `${base}.jpeg`,
+      `${base}.JPEG`,
+      `${base}.png`,
+      `${base}.PNG`,
+    ];
+    if (dot >= 0) variants.unshift(src);
+    return Array.from(new Set(variants));
+  };
+
   return (
     <section className="py-16 bg-gradient-to-b from-background to-muted/20">
       <div className="container">
@@ -58,12 +73,25 @@ const PhotoGallery: React.FC = () => {
                 setIsDragging(false);
               }}
             >
-              <img
-                src={photo}
-                alt={`Food photography ${index + 1}`}
-                className="w-full h-full object-cover group-hover:brightness-110 transition-all duration-300"
-                loading="lazy"
-              />
+                <img
+                  src={photo}
+                  data-original={photo}
+                  data-variant-index="0"
+                  alt={`Food photography ${index + 1}`}
+                  className="w-full h-full object-cover group-hover:brightness-110 transition-all duration-300"
+                  loading="lazy"
+                  decoding="async"
+                  onError={(e) => {
+                    const img = e.currentTarget as HTMLImageElement;
+                    const original = img.dataset.original || photo;
+                    const idx = parseInt(img.dataset.variantIndex || '0');
+                    const variants = getSrcVariants(original);
+                    if (idx < variants.length - 1) {
+                      img.dataset.variantIndex = String(idx + 1);
+                      img.src = variants[idx + 1];
+                    }
+                  }}
+                />
             </div>
           ))}
         </div>
@@ -97,6 +125,8 @@ const PhotoGallery: React.FC = () => {
               >
                 <img
                   src={selectedImage}
+                  data-original={selectedImage}
+                  data-variant-index="0"
                   alt="Full size food photography"
                   className="max-w-full max-h-full object-contain rounded-lg select-none"
                   style={{
@@ -104,6 +134,17 @@ const PhotoGallery: React.FC = () => {
                     transition: isDragging ? 'none' : 'transform 0.1s ease-out'
                   }}
                   draggable={false}
+                  decoding="async"
+                  onError={(e) => {
+                    const img = e.currentTarget as HTMLImageElement;
+                    const original = img.dataset.original || selectedImage!;
+                    const idx = parseInt(img.dataset.variantIndex || '0');
+                    const variants = getSrcVariants(original);
+                    if (idx < variants.length - 1) {
+                      img.dataset.variantIndex = String(idx + 1);
+                      img.src = variants[idx + 1];
+                    }
+                  }}
                 />
               </div>
             )}
