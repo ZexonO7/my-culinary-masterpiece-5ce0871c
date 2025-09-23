@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/components/ui/dialog';
+import React, { useState, useEffect } from 'react';
+import { Dialog, DialogContent, DialogTitle, DialogDescription } from '../ui/dialog';
 
 const PhotoGallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -33,6 +33,11 @@ const PhotoGallery: React.FC = () => {
     'lovable-uploads/IMG_9593.jpg'
   ];
 
+  const normalizedPhotos = foodPhotos.map(p => {
+    const trimmed = p.trim();
+    return trimmed.startsWith('/') ? trimmed : `/${trimmed}`;
+  });
+
   const getSrcVariants = (src: string) => {
     const dot = src.lastIndexOf('.');
     const base = dot >= 0 ? src.slice(0, dot) : src;
@@ -47,23 +52,25 @@ const PhotoGallery: React.FC = () => {
     if (dot >= 0) variants.unshift(src);
     return Array.from(new Set(variants));
   };
-
+  
   return (
     <section className="py-16 bg-gradient-to-b from-background to-muted/20">
       <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-primary mb-4">
-            Food Photography
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A visual journey through my culinary creations and food styling adventures
-          </p>
-        </div>
-        
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {foodPhotos.map((photo, index) => (
+          {normalizedPhotos.map((photo, index) => (
             <div
-              key={index}
+              key={photo}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  setSelectedImage(photo);
+                  setZoom(1);
+                  setPan({ x: 0, y: 0 });
+                  setIsDragging(false);
+                }
+              }}
               className="group relative overflow-hidden rounded-lg aspect-square bg-muted animate-[fadeInUp_0.6s_ease-out] hover:scale-105 transition-transform duration-300 cursor-pointer"
               style={{ animationDelay: `${index * 0.1}s` }}
               onClick={() => {
@@ -73,33 +80,32 @@ const PhotoGallery: React.FC = () => {
                 setIsDragging(false);
               }}
             >
-                <img
-                  src={photo}
-                  data-original={photo}
-                  data-variant-index="0"
-                  alt={`Food photography ${index + 1}`}
-                  className="w-full h-full object-cover group-hover:brightness-110 transition-all duration-300"
-                  loading="lazy"
-                  decoding="async"
-                  onError={(e) => {
-                    const img = e.currentTarget as HTMLImageElement;
-                    const original = img.dataset.original || photo;
-                    const idx = parseInt(img.dataset.variantIndex || '0');
-                    const variants = getSrcVariants(original);
-                    if (idx < variants.length - 1) {
-                      img.dataset.variantIndex = String(idx + 1);
-                      img.src = variants[idx + 1];
-                    }
-                  }}
-                />
+              <img
+                src={photo}
+                data-original={photo}
+                data-variant-index="0"
+                alt={`Food photography ${index + 1}`}
+                className="w-full h-full object-cover group-hover:brightness-110 transition-all duration-300"
+                loading="lazy"
+                decoding="async"
+                onError={(e) => {
+                  const img = e.currentTarget as HTMLImageElement;
+                  const original = img.dataset.original || photo;
+                  const idx = parseInt(img.dataset.variantIndex || '0');
+                  const variants = getSrcVariants(original);
+                  if (idx < variants.length - 1) {
+                    img.dataset.variantIndex = String(idx + 1);
+                    img.src = variants[idx + 1];
+                  }
+                }}
+              />
             </div>
           ))}
         </div>
-        
-        <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
-          <DialogContent className="max-w-4xl max-h-[90vh] p-0 bg-transparent border-none overflow-hidden">
-            <DialogTitle className="sr-only">Image viewer</DialogTitle>
-            <DialogDescription className="sr-only">Drag to pan, scroll to zoom</DialogDescription>
+        <Dialog open={!!selectedImage} onOpenChange={(open) => { if (!open) setSelectedImage(null); }}>
+           <DialogContent className="max-w-4xl max-h-[90vh] p-0 bg-transparent border-none overflow-hidden">
+             <DialogTitle className="sr-only">Image viewer</DialogTitle>
+             <DialogDescription className="sr-only">Drag to pan, scroll to zoom</DialogDescription>
             {selectedImage && (
               <div 
                 className="w-full h-full flex items-center justify-center cursor-grab active:cursor-grabbing"
