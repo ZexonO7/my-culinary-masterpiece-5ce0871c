@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Dialog, DialogContent, DialogTitle, DialogDescription } from '../ui/dialog';
+import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 
 const PhotoGallery: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
