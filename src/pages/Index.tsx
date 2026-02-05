@@ -4,6 +4,7 @@ import AboutSection from '../components/AboutSection';
 import RecipeFilters, { FilterType } from '../components/RecipeFilters';
 import RecipeGrid from '../components/RecipeGrid';
 import { Recipe } from '../types/Recipe';
+ import WelcomeModal from '../components/WelcomeModal';
 
 const Index = () => {
   const [currentFilter, setCurrentFilter] = useState<FilterType>('all');
@@ -262,6 +263,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen relative">
+       <WelcomeModal />
       <HeroSection />
       <AboutSection />
       
