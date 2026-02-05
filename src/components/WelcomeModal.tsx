@@ -31,7 +31,7 @@
  
    return (
      <Dialog open={isOpen} onOpenChange={(open) => { if (!open) handleClose(); }}>
-       <DialogContent className="max-w-md bg-card border-border">
+      <DialogContent className="max-w-md bg-[hsl(var(--card))] border-border shadow-2xl backdrop-blur-none">
          <DialogTitle className="font-playfair text-2xl text-center gold-gradient">
            Welcome! 👋
          </DialogTitle>
