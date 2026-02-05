@@ -30,7 +30,14 @@ const PhotoGallery: React.FC = () => {
     'lovable-uploads/IMG_1892.jpg',
     'lovable-uploads/IMG_2368.jpg',
     'lovable-uploads/IMG_2371.jpg',
-    'lovable-uploads/IMG_9593.jpg'
+    'lovable-uploads/IMG_9593.jpg',
+    'lovable-uploads/IMG_1764333646312.jpeg',
+    'lovable-uploads/IMG_6031.jpeg',
+    'lovable-uploads/IMG_6980.jpeg',
+    'lovable-uploads/IMG_1761854984816.jpeg',
+    'lovable-uploads/IMG_1762250269938.jpeg',
+    'lovable-uploads/IMG_1764172219722.jpeg',
+    'lovable-uploads/IMG_1764178230244.jpeg'
   ];
 
   const normalizedPhotos = foodPhotos.map(p => {
