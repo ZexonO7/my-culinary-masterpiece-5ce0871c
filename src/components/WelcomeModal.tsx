@@ -31,14 +31,14 @@
  
    return (
      <Dialog open={isOpen} onOpenChange={(open) => { if (!open) handleClose(); }}>
-      <DialogContent className="max-w-md bg-[hsl(var(--card))] border-border shadow-2xl backdrop-blur-none">
-         <DialogTitle className="font-playfair text-2xl text-center gold-gradient">
+      <DialogContent className="max-w-md !bg-[#1A1F2C] border-border shadow-2xl">
+        <DialogTitle className="font-playfair text-2xl text-center gold-gradient bg-transparent">
            Welcome! 👋
          </DialogTitle>
-         <DialogDescription className="text-center text-muted-foreground">
+        <DialogDescription className="text-center text-muted-foreground bg-transparent">
            Explore my collection of culinary creations
          </DialogDescription>
-         <div className="flex flex-col items-center gap-4 py-4">
+        <div className="flex flex-col items-center gap-4 py-4 bg-transparent">
            <Camera className="w-16 h-16 text-primary animate-pulse" />
            <p className="text-center text-foreground">
              Check out my food photography gallery to see all the delicious dishes I've made!
